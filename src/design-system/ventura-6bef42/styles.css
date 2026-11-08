@@ -1,0 +1,2482 @@
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --font-sans: "Libre Franklin", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.15 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.18 0 0);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.2 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.5 0 0);
+  --accent: oklch(0.93 0 0);
+  --accent-foreground: oklch(0.2 0 0);
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0 0);
+  --input: oklch(0.9 0 0);
+  --ring: oklch(0.18 0 0);
+  --primary-soft: oklch(0.95 0 0);
+  --verified: oklch(0.2 0 0);
+}
+
+@theme {
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 50s linear infinite;
+  --animate-rise: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-fade-in-soft: fade-in-soft 0.6s ease-out both;
+  --animate-pulse-dot: pulse-dot 2.6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-soft {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0 0 oklch(0.58 0.22 22 / 0.5);
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.9;
+    box-shadow: 0 0 0 18px oklch(0.58 0.22 22 / 0);
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px oklch(0.52 0.22 275 / 0.5);
+  color: transparent;
+}
+.text-outline-light {
+  -webkit-text-stroke: 1.2px oklch(1 0 0 / 0.35);
+  color: transparent;
+}
+
+@utility custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--primary) 55%, transparent) transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 999px;
+    margin: 8px 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--primary) 70%, transparent),
+      color-mix(in oklab, var(--primary) 45%, transparent)
+    );
+    border-radius: 999px;
+    border: 1px solid color-mix(in oklab, var(--background) 25%, transparent);
+    box-shadow: 0 0 10px color-mix(in oklab, var(--primary) 25%, transparent);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--primary) 90%, transparent),
+      color-mix(in oklab, var(--primary) 60%, transparent)
+    );
+    box-shadow: 0 0 14px color-mix(in oklab, var(--primary) 40%, transparent);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility scrollbar-stylish {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--primary) 55%, transparent) transparent;
+  scrollbar-gutter: stable;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 6px 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--primary) 55%, transparent);
+    border-radius: 999px;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in oklab, var(--primary) 80%, transparent);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+@keyframes float-card {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.5deg);
+  }
+}
+@keyframes pitch-swap {
+  0%,
+  22% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  28%,
+  100% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.96);
+  }
+}
+@keyframes feature-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes bounce-x {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.dark {
+  --background: oklch(0.14 0.02 265);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.2 0.03 265);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.2 0.03 265);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.7 0.19 280);
+  --primary-foreground: oklch(0.14 0.02 265);
+  --secondary: oklch(0.27 0.03 265);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.27 0.03 265);
+  --muted-foreground: oklch(0.7 0.02 260);
+  --accent: oklch(0.32 0.08 280);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.6 0.2 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.7 0.19 280);
+}
+
+/* Assistant mark: fully black on light surfaces, fully white on dark ones,
+   including portaled chats. */
+.program-ai-logo {
+  filter: brightness(0);
+  opacity: 1 !important;
+}
+
+.program-dark-theme .program-ai-logo,
+html.dark .program-ai-logo {
+  filter: brightness(0) invert(1);
+  opacity: 1 !important;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    font-family: var(--font-sans);
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+  ::-moz-selection {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+  .all-unset {
+    all: unset;
+  }
+}
+
+/* Global button ripple */
+.ui-ripple {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  transform: scale(0);
+  opacity: 0.45;
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, currentColor 45%, transparent) 0%,
+    color-mix(in oklab, currentColor 12%, transparent) 60%,
+    transparent 70%
+  );
+  animation: ui-ripple 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  z-index: 0;
+}
+@keyframes ui-ripple {
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-ripple {
+    display: none;
+  }
+}
+
+/* Global button particle burst */
+.ui-particle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  background: var(--primary, currentColor);
+  transform: scale(0);
+  animation: ui-particle 0.6s ease-out forwards;
+}
+@keyframes ui-particle {
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(calc(var(--px) * 0.5), calc(var(--py) * 0.5)) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--px), var(--py)) scale(0);
+    opacity: 0;
+  }
+}
+.particle-press {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-particle {
+    display: none;
+  }
+  .particle-press {
+    transform: none;
+  }
+}
+
+/* Glass text holder */
+.glass-holder-wrap {
+  position: relative;
+  display: inline-block;
+}
+.glass-holder {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--foreground) 8%, transparent),
+    color-mix(in oklab, var(--foreground) 2%, transparent)
+  );
+  backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid color-mix(in oklab, var(--foreground) 12%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 35%, transparent),
+    inset 0 -1px 0 color-mix(in oklab, var(--foreground) 8%, transparent);
+  color: var(--foreground);
+}
+.glass-holder-text {
+  color: inherit;
+}
+.glass-holder-shadow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: blur(18px);
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--foreground) 18%, transparent),
+    color-mix(in oklab, var(--foreground) 6%, transparent)
+  );
+  opacity: 0.6;
+  transform: translateY(6px) scale(0.96);
+}
+
+/* Glass button */
+.glass-button-wrap {
+  position: relative;
+  display: inline-block;
+}
+.glass-button {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--foreground) 12%, transparent),
+    color-mix(in oklab, var(--foreground) 4%, transparent)
+  );
+  backdrop-filter: blur(14px) saturate(160%);
+  border: 1.5px solid color-mix(in oklab, var(--foreground) 35%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 40%, transparent),
+    inset 0 -1px 0 color-mix(in oklab, var(--foreground) 10%, transparent);
+  color: var(--foreground);
+}
+.glass-button-text {
+  color: inherit;
+}
+.glass-button-shadow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: blur(18px);
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--foreground) 22%, transparent),
+    color-mix(in oklab, var(--foreground) 8%, transparent)
+  );
+  opacity: 0.6;
+  transform: translateY(6px) scale(0.96);
+}
+.all-unset {
+  all: unset;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--primary) 70%, transparent) transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: color-mix(in oklab, var(--foreground) 4%, transparent);
+  border-radius: 9999px;
+  margin: 4px 0;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 90%, oklch(1 0 0 / 0.25)),
+    color-mix(in oklab, var(--muted-foreground) 80%, oklch(1 0 0 / 0.15))
+  );
+  border-radius: 9999px;
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 0.25),
+    0 0 12px color-mix(in oklab, var(--primary) 50%, transparent);
+  border: 1px solid color-mix(in oklab, var(--foreground) 12%, transparent);
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 100%, oklch(1 0 0 / 0.35)),
+    color-mix(in oklab, var(--muted-foreground) 95%, oklch(1 0 0 / 0.25))
+  );
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 0.35),
+    0 0 20px color-mix(in oklab, var(--primary) 70%, transparent);
+  transform: scaleX(1.15);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(
+    180deg,
+    var(--primary),
+    color-mix(in oklab, var(--muted-foreground) 100%, oklch(1 0 0 / 0.35))
+  );
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 0.45),
+    0 0 28px color-mix(in oklab, var(--primary) 85%, transparent);
+}
+
+/* Hide scrollbar when not hovering for a cleaner look */
+.custom-scrollbar-fade::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: none;
+}
+.custom-scrollbar-fade:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 90%, oklch(1 0 0 / 0.25)),
+    color-mix(in oklab, var(--muted-foreground) 80%, oklch(1 0 0 / 0.15))
+  );
+}
+
+/* Animated photo frame */
+@keyframes photo-frame-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.photo-frame {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-2xl);
+  padding: 2px;
+  overflow: hidden;
+  background: var(--background);
+}
+
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(from 0deg, var(--primary), var(--muted-foreground), var(--primary));
+  opacity: 0.22;
+  animation: photo-frame-spin 5s linear infinite;
+  z-index: 0;
+}
+
+.photo-frame > img {
+  position: relative;
+  z-index: 1;
+  border-radius: calc(var(--radius-2xl) - 2px);
+  display: block;
+}
+
+/* Animated frame for info cards and general inquiries */
+.info-frame {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  padding: 2px;
+  overflow: hidden;
+  background: var(--background);
+  isolation: isolate;
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.info-frame::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(from 0deg, var(--primary), var(--muted-foreground), var(--primary));
+  opacity: 0.22;
+  animation: photo-frame-spin 5s linear infinite;
+  z-index: 0;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.info-frame > * {
+  position: relative;
+  z-index: 1;
+  border-radius: calc(var(--radius-2xl) - 2px);
+  background: var(--card);
+  height: 100%;
+}
+
+/* Let the global animated beams background show through full-page wrappers */
+[class~="bg-background"][class*="min-h-screen"],
+[class~="bg-background"][class*="min-h-dvh"],
+[class~="bg-background"][class*="h-screen"],
+[class~="bg-background"][class*="h-dvh"] {
+  background-color: transparent;
+}
+
+@keyframes intro-land {
+  0% {
+    transform: translateY(-1.25rem) scale(1.06);
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Pulsing glow for the program nav button */
+@keyframes program-glow-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 0 color-mix(in srgb, var(--program-glow, oklch(0.62 0.19 264)) 45%, transparent),
+      0 0 12px 0 color-mix(in srgb, var(--program-glow, oklch(0.62 0.19 264)) 35%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 0 0 6px color-mix(in srgb, var(--program-glow, oklch(0.62 0.19 264)) 0%, transparent),
+      0 0 22px 4px color-mix(in srgb, var(--program-glow, oklch(0.62 0.19 264)) 60%, transparent);
+  }
+}
+
+.program-glow {
+  animation: program-glow-pulse 2.2s ease-in-out infinite;
+  border-color: color-mix(in srgb, var(--program-glow, oklch(0.62 0.19 264)) 55%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .program-glow {
+    animation: none;
+  }
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted-foreground)) 0%,
+    hsl(var(--muted-foreground)) 35%,
+    hsl(var(--foreground)) 50%,
+    hsl(var(--muted-foreground)) 65%,
+    hsl(var(--muted-foreground)) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: text-shimmer 1.8s linear infinite;
+}
+
+@keyframes program-button-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 6px 0 var(--program-glow),
+      0 0 12px 0 var(--program-glow);
+  }
+  50% {
+    box-shadow:
+      0 0 10px 2px var(--program-glow),
+      0 0 22px 6px var(--program-glow);
+  }
+}
+
+.animate-program-button-glow {
+  animation: program-button-glow 2.2s ease-in-out infinite;
+}
+
+/* Founder Quest: isolated demo theme. */
+.journey-game {
+  --background: #101114;
+  --foreground: #f1f2f4;
+  --card: #191b20;
+  --card-foreground: #f1f2f4;
+  --popover: #191b20;
+  --popover-foreground: #f1f2f4;
+  --primary: #58cc02;
+  --primary-foreground: #17230e;
+  --secondary: #23262d;
+  --secondary-foreground: #f1f2f4;
+  --muted: #202329;
+  --muted-foreground: #9297a3;
+  --accent: #282c34;
+  --accent-foreground: #f1f2f4;
+  --border: #2c3038;
+  --input: #333843;
+  --ring: #1cb0f6;
+  --game-green: #58cc02;
+  --game-green-dark: #369000;
+  --game-green-tint: #203019;
+  --game-blue: #1cb0f6;
+  --game-blue-dark: #137ba9;
+  --game-gold: #ffc800;
+  --game-gold-dark: #a87900;
+  --game-grid: #1b1e24;
+  --game-road: #2a2e36;
+  --game-road-dark: #16181d;
+  --game-road-line: #454b56;
+  --game-overlay: #07090ce8;
+  --game-error: #ff827c;
+  --game-shadow: #00000055;
+  font-family: "Nunito", sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100dvh;
+  letter-spacing: 0;
+  color-scheme: dark;
+}
+.journey-game * {
+  letter-spacing: 0;
+}
+.journey-game button,
+.journey-game input,
+.journey-game textarea {
+  font-family: inherit;
+}
+.journey-game button {
+  font-weight: 800;
+}
+.journey-game button:focus-visible {
+  outline: 3px solid var(--game-blue);
+  outline-offset: 5px;
+}
+.game-sidebar {
+  width: 230px;
+  position: fixed;
+  inset: 0 auto 0 0;
+  border-right: 1px solid var(--border);
+  padding: 32px 20px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  background: var(--background);
+}
+.game-brand {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 29px;
+  line-height: 1;
+  font-weight: 1000;
+}
+.game-brand > div:last-child > span {
+  display: block;
+  font-size: 9px;
+  color: var(--muted-foreground);
+  margin-top: 9px;
+  font-weight: 900;
+}
+.brand-symbol {
+  height: 40px;
+  width: 40px;
+  border-radius: 13px;
+  background: var(--game-green);
+  color: var(--primary-foreground);
+  display: grid;
+  place-items: center;
+  transform: rotate(-8deg);
+  box-shadow: 0 4px 0 var(--game-green-dark);
+}
+.brand-symbol svg {
+  width: 26px;
+  height: 26px;
+}
+.game-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 48px;
+}
+.game-nav-item {
+  justify-content: flex-start;
+  height: 52px;
+  font-size: 14px;
+  border: 2px solid transparent;
+  padding: 0 16px;
+  color: var(--muted-foreground);
+  border-radius: 9px;
+}
+.game-nav-item svg {
+  width: 21px;
+  height: 21px;
+  margin-right: 4px;
+}
+.game-nav-item.active {
+  border-color: var(--game-green-dark);
+  background: var(--game-green-tint);
+  color: var(--game-green);
+  box-shadow: 0 2px 0 var(--game-green-dark);
+}
+.nav-count {
+  margin-left: auto;
+  border-radius: 5px;
+  background: var(--secondary);
+  color: var(--muted-foreground);
+  padding: 1px 6px;
+  font-size: 11px;
+}
+.sidebar-adventure {
+  border-top: 1px solid var(--border);
+  margin: 32px 12px 0;
+  padding-top: 32px;
+}
+.sidebar-adventure > svg {
+  color: var(--game-gold);
+  width: 24px;
+  margin-bottom: 12px;
+}
+.sidebar-adventure strong {
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 900;
+}
+.sidebar-adventure p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  margin-top: 12px;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  gap: 17px;
+}
+.demo-pill {
+  align-self: flex-start;
+  font-size: 9px;
+  font-weight: 900;
+  color: var(--muted-foreground);
+  border: 1px solid var(--border);
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+.sidebar-bottom > button {
+  justify-content: flex-start;
+  color: var(--muted-foreground);
+  font-size: 12px;
+}
+.game-player {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  gap: 10px;
+  padding: 22px 0;
+}
+.game-player > div,
+.header-avatar {
+  width: 36px;
+  height: 36px;
+  background: var(--game-blue);
+  color: var(--background);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 1000;
+}
+.game-player span {
+  font-size: 12px;
+  font-weight: 800;
+}
+.game-player strong {
+  display: block;
+  font-size: 10px;
+  color: var(--muted-foreground);
+  font-weight: 600;
+}
+.game-player > svg {
+  margin-left: auto;
+  width: 16px;
+  color: var(--game-gold);
+}
+.game-main {
+  margin-left: 230px;
+}
+.game-header {
+  height: 88px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px;
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background: var(--background);
+}
+.game-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+}
+.game-breadcrumb > span {
+  font-size: 9px;
+  color: var(--muted-foreground);
+  font-weight: 900;
+}
+.game-breadcrumb svg {
+  width: 13px;
+  color: var(--muted-foreground);
+}
+.game-breadcrumb strong {
+  font-size: 13px;
+}
+.game-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.game-stats > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 17px;
+  color: var(--game-gold);
+  font-weight: 900;
+}
+.game-stats .xp-stat {
+  color: var(--game-blue);
+}
+.game-stats small {
+  font-size: 9px;
+}
+.game-stats svg {
+  height: 21px;
+  width: 21px;
+}
+.header-avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+  background: var(--secondary);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+.game-layout {
+  max-width: 1420px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 318px;
+  gap: 30px;
+  padding: 30px 30px 0;
+}
+.game-map-area {
+  position: relative;
+  min-width: 0;
+}
+.chapter-bar {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  border: 1px solid var(--game-green-dark);
+  background: var(--game-green-tint);
+  box-shadow: 0 3px 0 var(--game-green-dark);
+  position: relative;
+  z-index: 2;
+}
+.chapter-bar > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.chapter-icon {
+  color: var(--game-green);
+}
+.chapter-bar small {
+  display: block;
+  color: var(--game-green);
+  font-size: 9px;
+  font-weight: 900;
+  margin-bottom: 3px;
+}
+.chapter-bar strong {
+  font-size: 16px;
+  font-weight: 900;
+}
+.chapter-bar > button {
+  padding: 0;
+  color: var(--game-green);
+  width: 47px;
+}
+.chapter-bar button svg {
+  height: 18px;
+  width: 18px;
+}
+.chapter-picker {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: 30;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px var(--game-shadow);
+}
+.chapter-picker button {
+  display: flex;
+  justify-content: space-between;
+  min-width: 220px;
+}
+.journey-world {
+  position: relative;
+  margin: 28px -10px 0;
+  background-image:
+    linear-gradient(var(--game-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--game-grid) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.journey-map-heading {
+  padding: 18px 10px 0;
+  position: relative;
+  z-index: 1;
+  background: var(--background);
+}
+.journey-eyebrow {
+  font-size: 10px;
+  font-weight: 1000;
+  color: var(--game-green);
+  display: inline-block;
+}
+.journey-map-heading h1 {
+  font-size: 30px;
+  font-weight: 1000;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+.journey-map-heading h1 span {
+  color: var(--muted-foreground);
+}
+.journey-map-heading > p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  margin: 0;
+}
+.journey-track {
+  height: 3060px;
+  position: relative;
+  max-width: 620px;
+  margin: auto;
+}
+.journey-road {
+  width: 100%;
+  height: 3000px;
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  fill: none;
+}
+.road-shadow {
+  stroke: var(--game-road-dark);
+  stroke-width: 46;
+}
+.road-base {
+  stroke: var(--game-road);
+  stroke-width: 32;
+}
+.road-dashes {
+  stroke: var(--game-road-line);
+  stroke-width: 2;
+  stroke-dasharray: 6 13;
+  animation: road-flow 24s linear infinite;
+}
+.chapter-marker {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+}
+.chapter-marker > span {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 900;
+  background: var(--background);
+}
+.chapter-marker strong {
+  font-size: 12px;
+  font-weight: 900;
+}
+.chapter-marker small {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.chapter-0 {
+  top: 40px;
+}
+.chapter-1 {
+  top: 735px;
+}
+.chapter-2 {
+  top: 1390px;
+}
+.chapter-3 {
+  top: 2305px;
+}
+.journey-stop {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.stop-0 {
+  left: 48.387%;
+}
+.stop-1 {
+  left: 75.806%;
+}
+.stop-2 {
+  left: 50%;
+}
+.stop-3 {
+  left: 23.387%;
+}
+.level-node {
+  width: 86px;
+  height: 78px;
+  border-radius: 50%;
+  background: var(--secondary);
+  border: 3px solid var(--border);
+  box-shadow:
+    0 8px 0 var(--game-road-dark),
+    0 10px 0 var(--border);
+  position: relative;
+  padding: 0;
+  transition:
+    transform 0.16s,
+    box-shadow 0.16s;
+}
+.level-node svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 2.6;
+}
+.level-node:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+.level-node:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 0 var(--game-road-dark);
+}
+.is-done .level-node {
+  background: var(--game-green);
+  color: var(--primary-foreground);
+  border-color: var(--game-green);
+  box-shadow: 0 8px 0 var(--game-green-dark);
+}
+.is-done .level-node:hover {
+  background: var(--game-green);
+}
+.is-current .level-node {
+  background: var(--game-blue);
+  border-color: var(--game-blue);
+  color: var(--background);
+  box-shadow: 0 8px 0 var(--game-blue-dark);
+  outline: 8px solid var(--game-road);
+  outline-offset: 6px;
+}
+.is-current .level-node:hover {
+  background: var(--game-blue);
+}
+.is-locked .level-node {
+  color: var(--muted-foreground);
+}
+.node-status {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: -8px;
+  right: -4px;
+  border-radius: 50%;
+  background: var(--game-green-dark);
+  color: var(--foreground);
+  display: grid;
+  place-items: center;
+  border: 3px solid var(--background);
+}
+.node-status svg {
+  height: 12px;
+  width: 12px;
+}
+.is-locked .node-status {
+  background: var(--secondary);
+  color: var(--muted-foreground);
+}
+.level-label {
+  position: absolute;
+  left: 110px;
+  top: 9px;
+  width: 190px;
+  pointer-events: none;
+}
+.stop-1 .level-label,
+.stop-2 .level-label {
+  left: auto;
+  right: 110px;
+  text-align: right;
+}
+.level-label small {
+  font-size: 8px;
+  color: var(--muted-foreground);
+  font-weight: 900;
+}
+.level-label strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 900;
+  margin: 4px 0;
+  line-height: 1.25;
+}
+.level-label > span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+.is-current .level-label strong {
+  color: var(--game-blue);
+}
+.is-done .level-label small {
+  color: var(--game-green);
+}
+.is-locked .level-label {
+  opacity: 0.65;
+}
+.level-label em {
+  font-size: 10px;
+  font-style: normal;
+  color: var(--game-gold);
+  font-weight: 900;
+  display: block;
+  margin-top: 7px;
+}
+.start-bubble {
+  position: absolute;
+  top: -66px;
+  left: 0;
+  white-space: nowrap;
+  background: var(--game-blue);
+  color: var(--background);
+  font-size: 12px;
+  font-weight: 1000;
+  padding: 10px 13px;
+  border-radius: 9px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  animation: game-bob 2s ease-in-out infinite;
+}
+.start-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 36px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background: var(--game-blue);
+}
+.map-companion {
+  position: absolute;
+  left: 145px;
+  top: -15px;
+  width: 148px;
+  height: 148px;
+  object-fit: contain;
+  animation: game-bob 4s ease-in-out infinite;
+  pointer-events: none;
+}
+.road-chest {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  color: var(--game-gold);
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  width: 130px;
+}
+.road-chest svg {
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 5px 0 var(--game-gold-dark));
+}
+.road-chest span {
+  font-size: 8px;
+  font-weight: 1000;
+}
+.journey-summit {
+  position: absolute;
+  top: 2790px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding-bottom: 60px;
+}
+.summit-trophy {
+  height: 100px;
+  width: 100px;
+  border: 4px solid var(--border);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 7px 0 var(--game-road-dark);
+  background: var(--card);
+  color: var(--game-gold);
+}
+.summit-trophy svg {
+  width: 45px;
+  height: 45px;
+}
+.journey-summit h2 {
+  font-size: 28px;
+  font-weight: 1000;
+  margin: 9px 0;
+}
+.journey-summit p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.summit-complete .summit-trophy {
+  border-color: var(--game-gold);
+  box-shadow: 0 7px 0 var(--game-gold-dark);
+}
+.jump-current {
+  position: sticky;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background: var(--card);
+  color: var(--game-blue);
+  border: 2px solid var(--border);
+  box-shadow: 0 3px 0 var(--game-road-dark);
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 9px;
+}
+.game-right {
+  min-width: 0;
+  padding-bottom: 30px;
+}
+.progress-panel,
+.pip-panel,
+.crew-panel {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+  background: var(--card);
+}
+.panel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.panel-title h2 {
+  font-size: 15px;
+  font-weight: 1000;
+}
+.panel-title > svg {
+  color: var(--muted-foreground);
+  height: 17px;
+}
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--game-green);
+  border-radius: 50%;
+}
+.muted-copy {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  margin-top: 6px;
+}
+.progress-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 21px 0 13px;
+}
+.progress-summary > strong {
+  font-size: 39px;
+  line-height: 1;
+  font-weight: 1000;
+}
+.progress-summary small {
+  font-size: 20px;
+  color: var(--muted-foreground);
+  margin-left: 2px;
+}
+.progress-summary > span {
+  font-size: 10px;
+  color: var(--muted-foreground);
+  text-align: right;
+  line-height: 1.6;
+}
+.game-progress {
+  height: 9px;
+  border-radius: 10px;
+  background: var(--secondary);
+  overflow: hidden;
+}
+.game-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--game-green);
+  border-radius: 10px;
+  transition: width 0.7s;
+  box-shadow: inset 0 3px 0 color-mix(in srgb, var(--foreground) 20%, transparent);
+}
+.chapter-progress {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0 23px;
+}
+.chapter-progress button {
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 9px;
+  color: var(--muted-foreground);
+}
+.chapter-progress .finished {
+  background: var(--game-green);
+  color: var(--primary-foreground);
+  border-color: var(--game-green);
+}
+.chapter-progress button svg {
+  width: 12px;
+  height: 12px;
+}
+.next-step {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+.next-step > small {
+  font-size: 9px;
+  color: var(--game-blue);
+  font-weight: 900;
+}
+.next-step h3 {
+  font-size: 17px;
+  font-weight: 1000;
+  margin: 6px 0 10px;
+}
+.next-step > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted-foreground);
+  margin-bottom: 17px;
+}
+.next-step > div > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--game-gold);
+  font-weight: 900;
+}
+.next-step > div svg {
+  width: 13px;
+  height: 13px;
+}
+.game-cta {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: var(--game-green);
+  color: var(--primary-foreground);
+  font-size: 12px;
+  font-weight: 1000;
+  box-shadow: 0 4px 0 var(--game-green-dark);
+  border: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  white-space: normal;
+}
+.game-cta:hover {
+  background: var(--game-green);
+  filter: brightness(1.08);
+}
+.game-cta:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--game-green-dark);
+}
+.game-cta svg {
+  width: 16px;
+  height: 16px;
+}
+.game-outline {
+  color: var(--game-blue);
+  background: transparent;
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 0 var(--border);
+  border-radius: 8px;
+  font-size: 11px;
+  height: 42px;
+  white-space: normal;
+}
+.game-outline:hover {
+  background: var(--secondary);
+  color: var(--game-blue);
+}
+.pip-panel {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 12px;
+}
+.pip-image-wrap {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 4px;
+}
+.pip-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: game-bob 4s ease-in-out infinite;
+}
+.pip-label {
+  font-size: 8px;
+  font-weight: 1000;
+  color: var(--game-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 6px 0 11px;
+}
+.pip-label svg {
+  height: 12px;
+  width: 12px;
+}
+.pip-panel h2 {
+  font-size: 26px;
+  font-weight: 1000;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.pip-panel p {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  max-width: 200px;
+  margin: 0 auto 18px;
+  line-height: 1.7;
+}
+.pip-panel button {
+  width: 100%;
+}
+.crew-panel {
+  padding-bottom: 15px;
+}
+.mini-match {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-top: 19px;
+}
+.mini-avatar {
+  width: 33px;
+  height: 33px;
+  display: grid;
+  place-items: center;
+  background: var(--game-blue-dark);
+  border: 2px solid var(--game-blue);
+  color: var(--foreground);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 1000;
+}
+.mini-avatar.gold {
+  background: var(--game-gold-dark);
+  border-color: var(--game-gold);
+}
+.mini-match > div {
+  flex: 1;
+}
+.mini-match strong {
+  display: block;
+  font-size: 11px;
+}
+.mini-match small {
+  font-size: 9px;
+  color: var(--muted-foreground);
+}
+.mini-match > span:last-child {
+  font-size: 11px;
+  font-weight: 1000;
+  color: var(--game-green);
+}
+.crew-link {
+  padding: 0;
+  margin-top: 16px;
+  color: var(--game-blue);
+  font-size: 11px;
+  justify-content: space-between;
+  width: 100%;
+}
+.fictional-label {
+  font-size: 8px;
+  color: var(--muted-foreground);
+}
+.game-footer {
+  font-size: 8px;
+  color: var(--muted-foreground);
+  text-align: center;
+  font-weight: 900;
+}
+.mobile-game-nav {
+  display: none;
+}
+.mission-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--game-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  backdrop-filter: blur(7px);
+}
+.mission-dialog {
+  position: relative;
+  width: 590px;
+  max-width: 100%;
+  max-height: 90dvh;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  overflow-y: auto;
+  padding: 24px 28px 30px;
+  box-shadow: 0 12px 0 var(--game-shadow);
+}
+.mission-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mission-top button {
+  color: var(--muted-foreground);
+}
+.mission-dialog h2 {
+  font-size: 30px;
+  font-weight: 1000;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+.mission-subtitle {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.mission-tabs {
+  display: flex;
+  margin: 25px -4px 22px;
+  border-bottom: 2px solid var(--border);
+}
+.mission-tabs button {
+  flex: 1;
+  font-size: 10px;
+  color: var(--muted-foreground);
+  padding: 0 7px 14px;
+  border-radius: 0;
+  height: 46px;
+  gap: 5px;
+}
+.mission-tabs .selected {
+  color: var(--game-blue);
+  border-bottom: 3px solid var(--game-blue);
+  margin-bottom: -2px;
+}
+.mission-tabs svg {
+  width: 14px;
+  height: 14px;
+}
+.mission-body h3 {
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 17px 0;
+}
+.mission-reward {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+.mission-reward > span:first-child {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--game-gold);
+  font-weight: 900;
+}
+.mission-reward svg {
+  height: 16px;
+}
+.mission-dialog textarea {
+  width: 100%;
+  min-height: 120px;
+  background: var(--background);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  color: var(--foreground);
+  font-size: 14px;
+  resize: vertical;
+}
+.field-hint {
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.mission-options {
+  display: grid;
+  gap: 11px;
+  margin: 20px 0;
+}
+.option {
+  width: 100%;
+  justify-content: flex-start;
+  white-space: normal;
+  text-align: left;
+  border: 2px solid var(--border);
+  padding: 14px;
+  height: auto;
+  min-height: 58px;
+  font-size: 12px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+.option.selected {
+  border-color: var(--game-blue);
+  background: color-mix(in srgb, var(--game-blue) 10%, var(--card));
+  color: var(--game-blue);
+}
+.option > svg {
+  margin-left: auto;
+}
+.option-number {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 10px;
+  margin-right: 7px;
+}
+.check-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.check-option input {
+  width: 19px;
+  height: 19px;
+  accent-color: var(--game-green);
+}
+.pip-tip {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 15px 0;
+  margin: 17px 0;
+}
+.pip-tip img {
+  width: 64px;
+  height: 75px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.pip-tip p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+.pip-tip strong {
+  display: block;
+  color: var(--foreground);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.mission-error {
+  color: var(--game-error);
+  font-size: 12px;
+}
+.demo-note {
+  display: block;
+  font-size: 9px;
+  font-weight: 900;
+  color: var(--muted-foreground);
+  margin: 14px 0;
+}
+.ai-response,
+.resource-preview {
+  background: var(--background);
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+  line-height: 1.8;
+  margin: 20px 0;
+}
+.demo-composer {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.demo-composer input {
+  min-width: 0;
+  flex: 1;
+  background: var(--background);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+}
+.demo-composer button {
+  color: var(--primary-foreground);
+  background: var(--game-green);
+}
+.demo-match {
+  display: grid;
+  grid-template-columns: 43px 1fr auto;
+  gap: 12px;
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: 8px;
+  margin: 14px 0;
+}
+.match-avatar {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--game-blue-dark);
+  border: 2px solid var(--game-blue);
+  font-size: 12px;
+  font-weight: 1000;
+}
+.match-avatar.investor {
+  background: var(--game-gold-dark);
+  border-color: var(--game-gold);
+}
+.demo-match small {
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
+.demo-match h4 {
+  font-size: 14px;
+  font-weight: 900;
+}
+.demo-match p {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  line-height: 1.7;
+}
+.match-percent {
+  font-size: 16px;
+  color: var(--game-green);
+}
+.match-why,
+.demo-match button,
+.intro-result {
+  grid-column: 1/-1;
+}
+.resource-item {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  margin: 15px 0;
+}
+.resource-item > svg {
+  width: 40px;
+  height: 40px;
+  color: var(--game-blue);
+}
+.resource-item small {
+  font-size: 9px;
+  color: var(--muted-foreground);
+}
+.resource-item h4 {
+  font-size: 17px;
+  font-weight: 900;
+  margin: 6px 0;
+}
+.resource-item p {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.resource-preview ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.locked-preview {
+  text-align: center;
+  padding: 35px 15px 50px;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.locked-preview > svg {
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  color: var(--game-gold);
+}
+.locked-preview h3 {
+  color: var(--foreground);
+}
+.celebration-dialog {
+  max-width: 440px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 38px;
+  text-align: center;
+  position: relative;
+}
+.reward-medal {
+  width: 105px;
+  height: 105px;
+  background: var(--game-gold);
+  color: var(--game-gold-dark);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 0 var(--game-gold-dark);
+  margin: 0 auto 28px;
+}
+.reward-medal svg {
+  width: 54px;
+  height: 54px;
+}
+.celebration-dialog h2 {
+  font-size: 30px;
+  font-weight: 1000;
+  margin: 12px 0;
+}
+.celebration-dialog > p {
+  font-size: 13px;
+  color: var(--muted-foreground);
+  line-height: 1.8;
+}
+.earned-xp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--game-blue);
+  font-weight: 1000;
+  gap: 8px;
+  font-size: 25px;
+  margin: 22px 0;
+}
+.badge-unlocked {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.badge-unlocked svg {
+  color: var(--game-gold);
+  width: 17px;
+}
+.celebration-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  padding: 0;
+}
+.game-collection {
+  padding: 30px 12px;
+  min-height: 85dvh;
+}
+.game-collection h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 1000;
+  margin: 15px 0;
+}
+.game-collection > p {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 12px 0 28px;
+}
+.achievement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.achievement-item {
+  padding: 28px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--muted-foreground);
+}
+.achievement-item > svg {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+}
+.achievement-item h3 {
+  font-size: 15px;
+  font-weight: 900;
+}
+.achievement-item p {
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 9px 0 16px;
+}
+.achievement-item > span {
+  font-size: 9px;
+  font-weight: 900;
+}
+.achievement-item.earned {
+  color: var(--game-gold);
+  border-color: var(--game-gold-dark);
+}
+.achievement-item.earned p {
+  color: var(--muted-foreground);
+}
+.crew-feature {
+  margin: 25px 0 45px;
+}
+.crew-feature img {
+  width: 210px;
+  height: 210px;
+  object-fit: contain;
+  margin: auto;
+}
+.crew-feature h2,
+.game-collection > h2 {
+  font-size: 24px;
+  font-weight: 1000;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+.crew-feature p {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 12px 0 22px;
+}
+@keyframes game-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+@keyframes road-flow {
+  to {
+    stroke-dashoffset: -190;
+  }
+}
+@media (min-width: 1500px) {
+  .game-layout {
+    gap: 52px;
+    padding-top: 36px;
+  }
+  .game-right {
+    padding-top: 0;
+  }
+  .journey-map-heading h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1199px) {
+  .game-sidebar {
+    width: 190px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .game-main {
+    margin-left: 190px;
+  }
+  .game-brand {
+    font-size: 25px;
+  }
+  .game-layout {
+    grid-template-columns: minmax(0, 1fr) 270px;
+    gap: 18px;
+    padding: 24px 20px 0;
+  }
+  .game-header {
+    padding: 0 24px;
+  }
+  .game-breadcrumb > span,
+  .game-breadcrumb > svg {
+    display: none;
+  }
+  .game-stats {
+    gap: 18px;
+  }
+  .game-stats small {
+    display: none;
+  }
+  .level-label {
+    width: 155px;
+    left: 102px;
+  }
+  .stop-1 .level-label,
+  .stop-2 .level-label {
+    right: 102px;
+  }
+  .level-label strong {
+    font-size: 15px;
+  }
+  .level-label > span {
+    font-size: 10px;
+  }
+  .map-companion {
+    left: 120px;
+    width: 110px;
+    height: 130px;
+  }
+  .game-nav-item {
+    font-size: 12px;
+    padding-left: 12px;
+  }
+  .progress-panel,
+  .pip-panel,
+  .crew-panel {
+    padding: 18px;
+  }
+  .journey-map-heading h1 {
+    font-size: 25px;
+  }
+  .chapter-bar {
+    padding: 14px;
+  }
+  .chapter-bar strong {
+    font-size: 14px;
+  }
+  .game-breadcrumb strong {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .game-sidebar {
+    width: 170px;
+  }
+  .game-main {
+    margin-left: 170px;
+  }
+  .game-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 730px;
+  }
+  .game-right {
+    display: none;
+  }
+  .game-brand {
+    font-size: 22px;
+    padding: 0 5px;
+    gap: 9px;
+  }
+  .brand-symbol {
+    width: 33px;
+    height: 33px;
+  }
+  .sidebar-adventure {
+    margin-left: 8px;
+  }
+  .game-nav-item {
+    padding-left: 8px;
+    gap: 6px;
+  }
+  .game-nav-item svg {
+    width: 18px;
+  }
+  .map-companion {
+    width: 145px;
+    height: 145px;
+    left: 135px;
+  }
+  .level-label {
+    width: 185px;
+  }
+  .journey-map-heading h1 {
+    font-size: 30px;
+  }
+  .game-player > svg {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .game-sidebar {
+    display: none;
+  }
+  .game-main {
+    margin-left: 0;
+  }
+  .game-header {
+    height: 65px;
+    padding: 0 18px;
+  }
+  .game-breadcrumb strong {
+    font-size: 12px;
+  }
+  .game-stats {
+    gap: 13px;
+  }
+  .game-stats > span {
+    font-size: 14px;
+    gap: 4px;
+  }
+  .game-stats svg {
+    height: 18px;
+    width: 18px;
+  }
+  .header-avatar {
+    display: none;
+  }
+  .mobile-game-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+    padding: 5px 8px;
+  }
+  .mobile-game-nav button {
+    font-size: 11px;
+    color: var(--muted-foreground);
+  }
+  .mobile-game-nav .active {
+    color: var(--game-green);
+  }
+  .game-layout {
+    padding: 18px 16px 0;
+  }
+  .chapter-bar {
+    padding: 12px;
+  }
+  .chapter-bar strong {
+    font-size: 13px;
+  }
+  .chapter-bar small {
+    font-size: 8px;
+  }
+  .chapter-bar .chapter-icon svg {
+    width: 20px;
+  }
+  .journey-world {
+    margin-top: 18px;
+    margin-left: -4px;
+    margin-right: -4px;
+    background-size: 42px 42px;
+  }
+  .journey-map-heading {
+    padding-top: 18px;
+  }
+  .journey-map-heading h1 {
+    font-size: 26px;
+    max-width: 280px;
+    line-height: 1.3;
+  }
+  .journey-map-heading h1 span {
+    display: block;
+  }
+  .journey-map-heading > p {
+    font-size: 11px;
+    max-width: 260px;
+    line-height: 1.8;
+  }
+  .journey-eyebrow {
+    font-size: 9px;
+  }
+  .level-node {
+    width: 67px;
+    height: 61px;
+    border-width: 2px;
+  }
+  .level-node svg {
+    width: 27px;
+    height: 27px;
+  }
+  .journey-stop {
+    width: 67px;
+    height: 67px;
+  }
+  .level-label {
+    left: 83px;
+    width: 132px;
+    top: 2px;
+  }
+  .stop-1 .level-label,
+  .stop-2 .level-label {
+    right: 83px;
+  }
+  .level-label strong {
+    font-size: 14px;
+  }
+  .level-label small {
+    font-size: 7px;
+  }
+  .level-label > span {
+    font-size: 10px;
+  }
+  .level-label em {
+    font-size: 9px;
+  }
+  .stop-0 {
+    left: 38%;
+  }
+  .stop-1 {
+    left: 75.806%;
+  }
+  .stop-2 {
+    left: 55%;
+  }
+  .stop-3 {
+    left: 23.387%;
+  }
+  .map-companion {
+    left: 100px;
+    width: 100px;
+    height: 120px;
+    top: -18px;
+  }
+  .start-bubble {
+    top: -56px;
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+  .chapter-marker {
+    left: 8px;
+  }
+  .chapter-marker strong {
+    font-size: 11px;
+  }
+  .chapter-marker small {
+    font-size: 9px;
+  }
+  .chapter-marker > span {
+    height: 26px;
+    width: 26px;
+  }
+  .mission-backdrop {
+    padding: 12px;
+    align-items: center;
+  }
+  .mission-dialog {
+    padding: 18px;
+    max-height: 94dvh;
+    border-radius: 12px;
+  }
+  .mission-dialog h2 {
+    font-size: 25px;
+  }
+  .mission-tabs {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+  .mission-tabs button {
+    font-size: 9px;
+    padding: 0 5px 10px;
+    gap: 4px;
+  }
+  .mission-tabs svg {
+    height: 12px;
+    width: 12px;
+  }
+  .mission-body h3 {
+    font-size: 17px;
+  }
+  .game-collection h1 {
+    font-size: 28px;
+  }
+  .achievement-grid {
+    gap: 10px;
+  }
+  .achievement-item {
+    padding: 20px 12px;
+  }
+  .celebration-dialog {
+    padding: 30px 24px;
+  }
+  .journey-summit h2 {
+    font-size: 25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey-game * {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+/* Keep roadmap coordinates consistent with the SVG at narrow sizes. */
+@media (max-width: 640px) {
+  .journey-game .stop-0 {
+    left: 48.387%;
+  }
+  .journey-game .stop-2 {
+    left: 50%;
+  }
+  .journey-game .stop-0 .level-label {
+    width: 115px;
+    left: 78px;
+  }
+  .journey-game .chapter-bar strong {
+    font-size: 11px;
+    max-width: 235px;
+    line-height: 1.5;
+  }
+  .journey-game .node-status > svg {
+    height: 12px;
+    width: 12px;
+  }
+  .journey-game .mobile-game-nav {
+    gap: 4px;
+  }
+}

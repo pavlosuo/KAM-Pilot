@@ -1,0 +1,1483 @@
+{
+  "meta": {
+    "name": "Ventura",
+    "package": "@ws-ix3gakhik3adax2g8knt/adc77c47-a52d-471d-aeb8-58cbf01141b8",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "tailwind",
+    "starter_template": "custom_design_system_tailwind",
+    "theme_files": ["src/styles.css"],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "850a26a87afa72d1a4ece787eb5c3d0e0cf81a9a45a71683d4330abb293a36b4",
+      ".gitignore": "6d9e901a692b46a83707c245fb03bc91",
+      ".lovable/mcp/manifest.json": "9beadb41999e7427743a3dbe59fe10eb",
+      ".lovable/north-star/north-star.md": "dd023331fe8bca51c81823b574a6d419",
+      ".lovable/plan/ai-assistant-in-the-program-dashboard-search-bar-2026-08-08.md": "9250f3aa827888d30d07fbd6e76e3c84",
+      ".lovable/plan/ai-mentor-matching-in-the-program-network-tab-2026-08-16.md": "2558c71903ff207aa9718f7f2f3329f1",
+      ".lovable/plan/four-ways-to-join-ventura-2026-09-05.md": "b6e4293fac904722c11f9129f16f0655",
+      ".lovable/plan/investor-and-mentor-home-2026-09-12.md": "0f4c74b9547c59de4cf2738c27d21577",
+      ".lovable/plan/investor-profile-an-ai-built-match-ready-page-2026-09-10.md": "cc04ce88e546a0b976350081e69b1999",
+      ".lovable/plan/network-as-a-connections-database-founder-side-mentor-invest-2026-08-17.md": "d28c64f6a5fc90b9ac94f76511b819c6",
+      ".lovable/plan/program-content-page-for-founders-2026-08-11.md": "9ed1efede3382c3ee50a937acca1efe2",
+      ".lovable/plan/program-content-page-layout-and-theming-pass-2026-08-11.md": "ed65a6e1953824b75fa17154664f9d7b",
+      ".lovable/plan/shared-inbox-for-founders-mentors-and-investors-2026-09-22.md": "50cff1ec48c569123ee7fa13a43c6aac",
+      ".lovable/plan/stabilize-program-assistant-controls-2026-08-10.md": "8c63a3c720b929778e6018b5033b55e8",
+      ".lovable/plan/ventura-founder-journey-standalone-game-demo-2026-10-15.md": "297c7ba51364a54c0a18664b4f4b5198",
+      ".lovable/project.json": "b60a4e3c0d4cde0e87e00b1d1b82a55b",
+      ".prettierignore": "7279a476f196a2da5f7edd18db568dc6",
+      ".prettierrc": "185ef0234746ab738ac1ab6cec5e2bd9",
+      "AGENTS.md": "6ec4f473aa117c54af30f8b22554dcb2",
+      "bunfig.toml": "06df017e61bba1ddb38372a88b93a532",
+      "components.json": "30d3d035361ce807021f5c54620962e9",
+      "drizzle.config.ts": "c2b6029fa56b49433380b7263b06e3f7",
+      "drizzle/migrations/0000_add_is_demo_to_startups.sql": "b8da4e4aae889729fa3e456e1a0c1bdd",
+      "drizzle/migrations/meta/0000_snapshot.json": "e36521b8163553aef92aa88cc7694407",
+      "drizzle/migrations/meta/_journal.json": "4a3426ad44f49f5ead4c1804d62281a0",
+      "drizzle/schema.ts": "a60267d05d7dd11572f02686241f37c6",
+      "eslint.config.js": "345bdd57e188e0e4525edcd00e5003f5",
+      "package.json": "ecaddd693fb79428bee52fb5c139f4e0",
+      "public/avatars/p1.jpeg": "ebd6462ad535ed9ff253d55cb43f9a3d",
+      "public/avatars/p2.jpeg": "b6a783d5f84fc5ac88885f05a505a031",
+      "public/avatars/p3.jpg": "d304081aa13690a48fa6e3bfebced43c",
+      "public/avatars/p4.jpg": "b9f4448ff09c1a2cdb8bf97cac7369bf",
+      "public/avatars/p5.jpg": "573635559e8eb92b5b30c207cde4479d",
+      "public/favicon.ico": "ebd3ff56ee2629f390e0f353704f439e",
+      "public/llms.txt": "8fc6d41640ef3e324f6b93985c9a9d1c",
+      "public/robots.txt": "fbd93e72f6122c44642036a4761e562f",
+      "public/videos/v1.mp4": "7a245ba40814ba9fba28809c38f270dc",
+      "public/videos/v2.mp4": "314e282b0a9cb684719f4b86a8433daf",
+      "public/videos/v3.mp4": "8e962b3d70650ae34f8e4d25d5085920",
+      "public/videos/v4.mp4": "9ab1985da500a5e7f4fed2febf481000",
+      "public/videos/v5.mp4": "a1a148298b115fafb7e05ffe81aaa292",
+      "roadmap.md": "88edde3c3060e4cdca11b95aed976a8a",
+      "src/assets/antler.png": "be551fe119d246279455f465bad18772",
+      "src/assets/empty-startups-emoji.png.asset.json": "be7e7e6d9803848be490883d4197c439",
+      "src/assets/finland-map.png": "9f593b1d9802b0d94b1f4963c332e07c",
+      "src/assets/forward.png": "713cbeffd78e1288e343e62640b43dad",
+      "src/assets/forward.png.asset.json": "f74926d92368430c98315485fb795a99",
+      "src/assets/grey-sad-emoji.png": "713bbb8ba637af2965c229768d976627",
+      "src/assets/ignite.png.asset.json": "188f32eeb1942a3fe32c477c4af2baf1",
+      "src/assets/journey-companion.png": "4f42bba91f42f9fa5116af64f2290c57",
+      "src/assets/launchx.png.asset.json": "3c09469bc6a0bd5d90a8587279eee597",
+      "src/assets/logo-antler.png": "847e2447f2659b1af0484fbecece87e7",
+      "src/assets/logo-boost.png": "7072d4c1f059f8325403ae5c840a203c",
+      "src/assets/logo-forward-new.png": "847e2447f2659b1af0484fbecece87e7",
+      "src/assets/logo-forward.png": "b907b786abdaf98681f7847b162aba83",
+      "src/assets/logo-ignite.png": "2ab42ea2b93041915bdc6a97cb205fde",
+      "src/assets/logo-oulues.png": "bffd9dc1feccd565b22eb765c3fa4cd4",
+      "src/assets/logo-slush.png": "401e09fd01e172313389e22d177cc7a0",
+      "src/assets/lutes-growth.png.asset.json": "639ec9d0d36afc9716a30d3a37ca8d3a",
+      "src/assets/mentors/Avesta_Omar.jpg.asset.json": "8eee69be4c69d6773f3fbbca3c072682",
+      "src/assets/mentors/Cameron_Murphy.jpg.asset.json": "6f0eb5e0c8960a422002284a0feeaf52",
+      "src/assets/mentors/Claes_Mikko_Nilsen.jpg.asset.json": "1c1ed44d399d2ce1fc81d7d1aca2fb7c",
+      "src/assets/mentors/Ilkka_Paananen.png.asset.json": "ec45ccc08ee6307b943f9642474208a4",
+      "src/assets/mentors/Jussi_Kallasvuo.jpg.asset.json": "f689b1e20b007b50cbb69f098c871051",
+      "src/assets/mentors/Lauri_Kokkila.jpg.asset.json": "43a12d4d27865f19d529eff07bee000b",
+      "src/assets/mentors/Marianne_Vikkula.jpg.asset.json": "a32c774856b42d00184d34c4c016c75c",
+      "src/assets/mentors/Marten_Mickos.jpg.asset.json": "117b3a05a104d1c187dfd7ef65e4c338",
+      "src/assets/mentors/Matti_Ronkko.jpg.asset.json": "fb177b633f83e0822f9e347d0839ec7a",
+      "src/assets/mentors/Monika_Liikamaa.png.asset.json": "08c7375f5199e296da4b01d04f196d26",
+      "src/assets/mentors/Niko_Downie.jpg.asset.json": "38cdcc636ff634886fc65cdfbf31e291",
+      "src/assets/mentors/Niko_Eiden.jpg.asset.json": "b7c7665cc88bde906ec8b10e0dd706f0",
+      "src/assets/mentors/Noora_Saksa.jpg.asset.json": "e0ce56e909620a6275600db4725fe4dc",
+      "src/assets/mentors/Olli_Kangas.jpg.asset.json": "8da0573b5d6a461251fbcca6be2b7dec",
+      "src/assets/mentors/Otto_Hilska.jpg.asset.json": "2396db136baa21e45d170c55f76875a1",
+      "src/assets/mentors/Peter_Sarlin.jpg.asset.json": "d990d27fb69ecbe7bb078c485f7a852c",
+      "src/assets/mentors/Son_Chu_Hoang.jpg.asset.json": "19b5a5adbc876cf87c3ea46958dda967",
+      "src/assets/mentors/Ville_Kyrki.jpg.asset.json": "4370a73c268a5d7269d317a570d44747",
+      "src/assets/mentors/Walid_El_Cheikh.jpg.asset.json": "3e687494b7b23f99fe2a4df72bffe6c0",
+      "src/assets/mentors/Youssef_Zad.jpg.asset.json": "e3c1bd0596529af43bfe557960d12b93",
+      "src/assets/moksh.png.asset.json": "b26d88c1ed28e7940aa7a6ce054aeb97",
+      "src/assets/oulues.png.asset.json": "5efefd558546ec68eaed854c8f9922ef",
+      "src/assets/pitch/antler.png": "be551fe119d246279455f465bad18772",
+      "src/assets/pitch/forward.png": "713cbeffd78e1288e343e62640b43dad",
+      "src/assets/pitch/ruslan.jpeg": "b6a783d5f84fc5ac88885f05a505a031",
+      "src/assets/pitch/slush.png": "a80ce0f24f7726cbb2d46f273b715a37",
+      "src/assets/pitch/video-thumb.jpeg": "d3da2962d82bde30c1e4916d111a811e",
+      "src/assets/ruslan.jpeg": "b6a783d5f84fc5ac88885f05a505a031",
+      "src/assets/slush.png": "a80ce0f24f7726cbb2d46f273b715a37",
+      "src/assets/slush.webp.asset.json": "98be1a3ff9d7790d9af880b0c8b74c1f",
+      "src/assets/steve-jobs.png": "ba55df1244a004056770d5465924998a",
+      "src/assets/stockholm.jpeg.asset.json": "807108d7ba52769a6e23b35a69e1359e",
+      "src/assets/team-combined.jpeg.asset.json": "bc03c78c20af95cbaef56538687c6de4",
+      "src/assets/team-moksh.jpeg": "062ae200e8a5595e6134fb99914ce1ca",
+      "src/assets/team-moksh.jpeg.asset.json": "4be665dac0f03a925ec0cc1cc24f9c00",
+      "src/assets/team-ruslan.jpeg": "3b9504ca9df43dfdc1219a287ff7427b",
+      "src/assets/team-ruslan.jpeg.asset.json": "8f55f9ce9fb7bb26f6c3899a46df82fe",
+      "src/assets/tres.png.asset.json": "7d4abf9fe79297dfe8b2c5ae64784e31",
+      "src/assets/ventura-orb-logo.png.asset.json": "5eb91024f53f1c74296a54cf33266a3d",
+      "src/assets/ventura-v-logo.png.asset.json": "f62ee3459300be9589b7c16bcf476385",
+      "src/assets/video-thumb.jpeg": "d3da2962d82bde30c1e4916d111a811e",
+      "src/assets/wednesday.png.asset.json": "248f0b53f8d6e901d86fd74fcb13d1ba",
+      "src/components/AiCreditsMeter.tsx": "25c02512ea0d5e8a6161e983ed155037",
+      "src/components/BackedByBlock.tsx": "66749e5b9f43db1f6948a46149e3cb00",
+      "src/components/BeamsBackground.tsx": "ca0679ab2680a7452af8bf68e458fc32",
+      "src/components/ChatMarkdown.tsx": "60e462eea6150495c51de8a843017fba",
+      "src/components/CitySearch.tsx": "ca1dc31d9a37cc3531f1b0b611417747",
+      "src/components/CloudflareVideoPlayer.tsx": "14ce975a8b56b8a76bc1f02398de1a04",
+      "src/components/CommentsDialog.tsx": "cc4a8753092a9a57d1a883c9510e9d13",
+      "src/components/CookieBanner.tsx": "965cc414a72295ad841873bdd9e8ac60",
+      "src/components/CursorGlow.tsx": "fb09d9a5dfb2929f4839f52a8ef1876e",
+      "src/components/DictationWaveform.tsx": "75ed3ad8ec3fd2a346051d43497d64cc",
+      "src/components/ExpandableImage.tsx": "336d27be519cbb51e402194e74443384",
+      "src/components/FeedbackButton.tsx": "bcf5f6b3211a5b6c6f63baee99e6996d",
+      "src/components/Footer.tsx": "12988c9f67e7fba18af17370d23fb409",
+      "src/components/GlobalParticles.tsx": "0fe12332e44fd3e639f2578489ca7b66",
+      "src/components/GlobalRipple.tsx": "c0b8cc725e68c90dd43bfd8a77ba4dc6",
+      "src/components/HandleEditor.tsx": "b88d4980af6563e4b172f6cdeb9e125a",
+      "src/components/Header.tsx": "cf9d948eb3cadd3e24ea7f5949e4ff6e",
+      "src/components/HeaderMediaViewer.tsx": "e41110c84e208cb7f261cdafa8630409",
+      "src/components/InboxDialog.tsx": "37dabef4674224799f7f85f44ed8dcdd",
+      "src/components/InvestingAreaMap.tsx": "bd35966261b246c7e1a3dd5a7cc99071",
+      "src/components/LinkedInImportDialog.tsx": "ee6794d7a5c724851c2eee4a3ecf0ddf",
+      "src/components/LoggedInHub.tsx": "db71934be2e121ffb74c780cf88271ae",
+      "src/components/LogoPicker.tsx": "1d893f16f2e760bd19627b8215e11b68",
+      "src/components/MinimalPitchVideoPlayer.tsx": "9f78722a8264ae14f766a4bc363862bc",
+      "src/components/NativeVideoPlayer.tsx": "75b4a85e7564347f426888dc65e21996",
+      "src/components/NewsBellButton.tsx": "3c55a0e3fb1b7b47e1cddb98c839c24f",
+      "src/components/OfferingTabs.tsx": "4bf4648657e9ed3d44aceeab4e75921b",
+      "src/components/OtherProgramLogoUploader.tsx": "2b81536369039236b2a517cce7e2ee40",
+      "src/components/PitchVideoUploader.tsx": "e96cd29e37ca311d85b173adce969654",
+      "src/components/PostHogAnalytics.tsx": "f1f172bc3d8f1d2ce7b87f2074e9f230",
+      "src/components/ProgramInviteGate.tsx": "6f463bc2fba181849ca64a64be0808b3",
+      "src/components/ProgramLogo.tsx": "ab4cd856937aca30d9eac08d1c18efc8",
+      "src/components/ProgramNavButton.tsx": "63204fd84fa766a1bec062bbeeca1752",
+      "src/components/PublicShareCard.tsx": "9d074243b4230dfe3fbb7e7fbabec329",
+      "src/components/ShareProfileDialog.tsx": "a3630ab085b169fc061bad5dbf1c306f",
+      "src/components/ShareStartupDialog.tsx": "934dc25b668a24cbda2f771a1a5c3441",
+      "src/components/SignUpPromptDialog.tsx": "bc76f31dfbde4c2d1d6779205043a6e5",
+      "src/components/SiteAnnouncementBanner.tsx": "727b6f468ccff6624a8f98941ab50338",
+      "src/components/SkillPickerDialog.tsx": "cc2e7391bebc52f3aee1bdff7ed1aa8f",
+      "src/components/StartupFollowButton.tsx": "8e3409a507ef4c11288cbf68930f7247",
+      "src/components/SuggestInput.tsx": "fd95274c8d7e10f5d9705d805c09b68f",
+      "src/components/VoiceTranscribeButton.tsx": "1456a103623ea4369055712cf428d67c",
+      "src/components/WaitlistForm.tsx": "68fabeaffd58eb738d4355f6f7a8fc86",
+      "src/components/admin/ProgramBrandingEditor.tsx": "ab6e6215f0ddb46f5a8549a733d678a4",
+      "src/components/admin/ProgramsSection.tsx": "d80109eb3ceca470c983b5efc7b5cc9e",
+      "src/components/ai-elements/prompt-input.tsx": "a8390101b2dc9e551b9da8d71e1652b4",
+      "src/components/chat/ChatAttachButton.tsx": "1e4f192af7bd9b8484d2ab3bb2163eec",
+      "src/components/chat/ChatComposer.tsx": "70997670a142e13d8d47dac1ab364a22",
+      "src/components/chat/ChatMessageBody.tsx": "c0fe3f0cebb5461a93655b53adb36278",
+      "src/components/journey-demo/JourneyMap.tsx": "2189dcbde47baf4f55973a81429f4373",
+      "src/components/journey-demo/MissionDialog.tsx": "e9789575d6dd6118b4e10aa0a0209ce6",
+      "src/components/journey-demo/journey-data.test.ts": "bac4717579d66d4906468e23108526d0",
+      "src/components/journey-demo/journey-data.ts": "2ceb1ae462e6c5437342e228f0bb2ee8",
+      "src/components/onboarding/MapAreaPicker.tsx": "c04f589cae1cebd1c83e0ecd77d4863a",
+      "src/components/onboarding/OnboardingShell.tsx": "3caab5d2c6100a45df3e54afda84de13",
+      "src/components/onboarding/TagPickerDialog.tsx": "89c6c48646a67580189abc90f147f6a8",
+      "src/components/profile/ContributionBoard.tsx": "51f14a9e32d15492a41d8af6c9de3a8f",
+      "src/components/profile/ProfilePhotoLightbox.tsx": "521987171f5eb52a77e4c5ab4360aeb3",
+      "src/components/profile/ResearchBlocks.tsx": "e9be90568d1e3ec3cf2c19d6d35664d6",
+      "src/components/program-content/ChallengesBlock.tsx": "873c74f745d5982fda04bcdfbb6890fa",
+      "src/components/program-content/ContactProgramBlock.tsx": "b72ea6fac440f9d0dd20bf086b4fc874",
+      "src/components/program-content/FounderAiChat.tsx": "c963fe403ab8746e08d7fffc75fa5229",
+      "src/components/program-content/InfoHint.tsx": "f0ba6572559f15606c8e376557589013",
+      "src/components/program-content/MatchPodium.tsx": "e73b081e20a528f6f7452c32ee63b086",
+      "src/components/program-content/MatchingBlock.tsx": "d70b6f73d95fc0defb6736af069694b8",
+      "src/components/program-content/ProgramAiSearchBar.tsx": "0a01b65bcf953e595105d05bfba34c64",
+      "src/components/program-content/ResourcesBlock.tsx": "eb4950b49235c6d0b133409ef75b6142",
+      "src/components/program-content/ResourcesPreloader.tsx": "eda149207f54cb67a56d4833c44d1829",
+      "src/components/program/ChallengeSubmissionsReview.tsx": "4224b78503301b73571c139ce27b06dd",
+      "src/components/program/ConnectionsCard.tsx": "d6b235fc5a485aff82bb8f24c5ecfb45",
+      "src/components/program/MentorMatchCard.tsx": "35d1a53498f0df3ecf19a5e7871e7962",
+      "src/components/program/PostponeRequestsReview.tsx": "ae078d901aa8bce8ed8be78ba5fc4fb6",
+      "src/components/program/ProgramAiChat.tsx": "c3751427d74df3d72d2bc3f5170508b1",
+      "src/components/program/ProgramInboxChat.tsx": "594d192785d01e186cfb142a8bc254e5",
+      "src/components/program/ProgramSettingsDialog.tsx": "7bd91ffa973664ae7b47a4db2a263a67",
+      "src/components/role-home/ActionFillDialog.tsx": "55e130b029ae51b81872bf80880e0d47",
+      "src/components/role-home/GoalAlertDialog.tsx": "2fa9db62a3c14e242c3878b242a510f6",
+      "src/components/role-home/MessageFounderDialog.tsx": "287aff041cb52f5b9df0ebcd44dc0b05",
+      "src/components/role-home/RoleAssistant.tsx": "bb7490b894e1b4493831e2c38b2a3e3b",
+      "src/components/role-home/RoleHome.tsx": "7716d0c85e27665efed4c628488bbdc1",
+      "src/components/role-home/StartupMatchPodium.tsx": "663c42d36b2255ae33a97ee20566ac50",
+      "src/components/startup-updates/AchievementCelebration.tsx": "2915a266a8ec9dd7bbc1a8aba13304fe",
+      "src/components/startup-updates/AchievementUnlockedDialog.tsx": "3e50ace00891d5b5da4bd33171b82d05",
+      "src/components/startup-updates/AttachFilesButton.tsx": "34f605052afaaf8f83360e7876012522",
+      "src/components/startup-updates/BadgeCelebrationWatcher.tsx": "e5962586bd28ea210d6401a164e4d214",
+      "src/components/startup-updates/GlobalUpdateHistoryButton.tsx": "02e4d2cfd300af8e58c9b9fc5399eb74",
+      "src/components/startup-updates/MetricsStage.tsx": "1a5f3d75f3f7bad29f7550ec353c22d2",
+      "src/components/startup-updates/PastUpdatesDrawer.tsx": "ab7c7fb05c0eb8a50240e455901014fd",
+      "src/components/startup-updates/ProgressionCards.tsx": "33a01c7202f3992cedeb2216dbb49e68",
+      "src/components/startup-updates/RecorderStage.tsx": "096cd81420e9ea1987b69c1c6f2482a3",
+      "src/components/startup-updates/StreakBadge.tsx": "39ef84463d53a54870652d7d98e4b2af",
+      "src/components/startup-updates/goals/ChallengeGoalsCard.tsx": "e15c50bd9c861917e2463f7a1e0fc001",
+      "src/components/startup-updates/goals/GoalsReviewStep.tsx": "ce31d0b254667ac9d2064f11d85f914d",
+      "src/components/startup-updates/goals/GoalsSetStep.tsx": "556bf0acad7d3e0bc2432ce0c25e67c0",
+      "src/components/startup-updates/goals/GoalsStage.tsx": "d34443fb4baf650cee6be131a5539ba5",
+      "src/components/startup-updates/goals/badges.ts": "6893536cd96bb2b0bdd9bc4c33b88b7e",
+      "src/components/startup/CreateStartupWizard.tsx": "9de454ab2acea1b218e9c55640db1e70",
+      "src/components/startup/CurrentWeekUpdatePanel.tsx": "164fa53d84125d56e5704d3be7a57e53",
+      "src/components/startup/PitchDeckCard.tsx": "ba9acbb0d90a780addcc8edf301fe2ed",
+      "src/components/startup/ProgramMembershipBadges.tsx": "0e2968758c9a27fc2678af1b0f053233",
+      "src/components/startup/ProgramPanel.tsx": "762c1c956a085a810274d31d1b92d439",
+      "src/components/startup/ProgressTrackingSection.tsx": "078158ba4921bb526fd1b6dabca6b9dc",
+      "src/components/startup/ProgressXpCard.tsx": "182113cc1ed9a7a4f62ef5db8ab0dccf",
+      "src/components/startup/PublicProgressBadge.tsx": "4fe345019e53ea4d5d07771f35d4f30f",
+      "src/components/startup/SeeFullUpdateCard.tsx": "5bd0fd84a996130f0d71e1cc2c9e1051",
+      "src/components/startup/StartupPlaceholderCard.tsx": "61485410758fde181303b544ef83c952",
+      "src/components/startup/StartupTeamSection.tsx": "d0406985c263e8cf1ee2e15c0a2d9e35",
+      "src/components/startup/TeammatesStep.tsx": "c4a75320d63bb343c152418e09542b94",
+      "src/components/tour/HomeTour.tsx": "58624411fe8e8429f119569395894dc6",
+      "src/components/tour/ProductTour.tsx": "e088192c626c7180ab2e6947471b0cf6",
+      "src/components/tour/ProgramLeadTour.tsx": "a02a17c1926bb0197ec335ce0f4fd225",
+      "src/components/tour/ProgramTour.tsx": "cc9698b80db0b237c40c357778936a95",
+      "src/components/ui/accordion.tsx": "55f9dda62b4e3913c9b23e5015a86aef",
+      "src/components/ui/activity-rings.tsx": "e9c9d9c7e19f5423da09834f35f5ae64",
+      "src/components/ui/add-to-calendar-button.tsx": "949cf31bb86d0a269ec7de1c20f5506e",
+      "src/components/ui/ai-text-loading.tsx": "54de709cf574fe02de8b14f3b01e3c98",
+      "src/components/ui/alert-dialog.tsx": "0d1bb46aef927178fca4f2c386d21972",
+      "src/components/ui/alert.tsx": "f993d7e96b1e25ce50e68ed97e11d2a8",
+      "src/components/ui/animated-input.tsx": "a0dda3c9ea0470c097076e0b382ade44",
+      "src/components/ui/animated-loading-skeleton.tsx": "54e951a29aa89a612af7eae016846b40",
+      "src/components/ui/animated-text.tsx": "34bef1bbd98698e4841fbc82cc520353",
+      "src/components/ui/aspect-ratio.tsx": "c5c364545e1b25a94e9e752cd67ad048",
+      "src/components/ui/avatar.tsx": "72989cd32f72c4122802540ef32525a5",
+      "src/components/ui/badge.tsx": "81cade001fc4260f9943e18dcd79449b",
+      "src/components/ui/breadcrumb.tsx": "bb9ac254f12662b20d5d50b84308bf3a",
+      "src/components/ui/button.tsx": "7d07d520f486b12bd47373d694ecd2ee",
+      "src/components/ui/calendar.tsx": "415d91d7006d4cc654e27620fca340f6",
+      "src/components/ui/card.tsx": "d6c48ea36221b9cdc3576d305d12d5d5",
+      "src/components/ui/carousel.tsx": "e324c68ae00cd5aed49317638abd429a",
+      "src/components/ui/chapter-scrubber.tsx": "9bc835521610363e3d9a4edba9395098",
+      "src/components/ui/chart.tsx": "6a3baf94f2e89f1f97d4d7a28f3622d2",
+      "src/components/ui/checkbox.tsx": "f78aac270ca482c8c2cb907ef6260462",
+      "src/components/ui/collapsible.tsx": "767631bbc344945c236f185f4078d71d",
+      "src/components/ui/command.tsx": "014782599cc838b021ec68b07ad4ea02",
+      "src/components/ui/confetti.tsx": "bca00ecdd7614a5a0443ddeca13790c8",
+      "src/components/ui/context-menu.tsx": "e9d689beb53d9adb63165bfe64838bf6",
+      "src/components/ui/date-picker.tsx": "20d811d275ca5d7ff1d5df75c563fa11",
+      "src/components/ui/dialog.tsx": "fe0c81541fc642ecfe8e9f4f557402d3",
+      "src/components/ui/drawer.tsx": "8be333e8fd8e42576b1b5f72f07f4337",
+      "src/components/ui/dropdown-menu.tsx": "cf01787247e0165d396324bf06693d42",
+      "src/components/ui/file-upload.tsx": "45277a5b8ab0fc36c7a8981d84674961",
+      "src/components/ui/form.tsx": "1b0aa6302b9017ea2a1307c22a1d2983",
+      "src/components/ui/glass-button.tsx": "34d2917fd51075a96a29819b0c9ea888",
+      "src/components/ui/glass-text-holder.tsx": "cd4dbe8c7849d330d9082b09886b4c6a",
+      "src/components/ui/glow-menu.tsx": "0a451517bf97c008bb8e014dd0e5053d",
+      "src/components/ui/hover-card.tsx": "1442794c5ca2a78d69e4e613b315ed3d",
+      "src/components/ui/ia-siri-chat.tsx": "da765f65c6b4f79abae5fcb5df51d4da",
+      "src/components/ui/input-group.tsx": "2c3fcb29ad6181afc9d0e4d353d7b4dc",
+      "src/components/ui/input-otp.tsx": "58cff10c8942cac8483c0bcd65d39d3c",
+      "src/components/ui/input.tsx": "1d4cc52a4cd8afb3e18e45bda942bb8a",
+      "src/components/ui/label.tsx": "7e35df4ca8edd0835efd97ca7937ef92",
+      "src/components/ui/leaderboard-card.tsx": "f2f5aec6002a0dcd749c053cdb0db853",
+      "src/components/ui/leaderboard-podium.tsx": "aad38fa3e659e8ed46a6e9c359d9b260",
+      "src/components/ui/leaderboard-rankings.tsx": "571328b8cacd43fed52aa4b34752b533",
+      "src/components/ui/liquid-metal-button.tsx": "31e545f71a477b489f61bfb6ab9d0cea",
+      "src/components/ui/loader.tsx": "4488b217765066f00cbc10bfeebbc60e",
+      "src/components/ui/menubar.tsx": "5870465653e12c3d0e35a2fad6f9faa9",
+      "src/components/ui/message-loading.tsx": "b67f095f8581c5a7859848a4566c64a9",
+      "src/components/ui/month-input.tsx": "0c11bc1ffbe8d192ce80d842cfb6e786",
+      "src/components/ui/multi-select-combobox.tsx": "e719c45774ea8db36201a93c904d1ff9",
+      "src/components/ui/navigation-menu.tsx": "e85351147a02b29577ff83d188b63c24",
+      "src/components/ui/pagination.tsx": "fac6cdbb4bbf78b273d85cd36d6cbb49",
+      "src/components/ui/particle-button.tsx": "a947383770b10ebc762b6c6daf84c7f5",
+      "src/components/ui/popover.tsx": "f18aa1da2144f25ee60795c539c51bcd",
+      "src/components/ui/progress.tsx": "55c462e5c9dd678dcf2c0c510b014ac4",
+      "src/components/ui/radio-group.tsx": "0e1ace237a5da3197e3eb1e6683faba9",
+      "src/components/ui/resizable.tsx": "d9fcb9203c749fcab4e125a99bb12a86",
+      "src/components/ui/scroll-area.tsx": "87b65d3eb26f2b02ff35a7acea585ba5",
+      "src/components/ui/select.tsx": "31ea1bbd6671833b010b2e852c8a55d0",
+      "src/components/ui/separator.tsx": "433d163c4ffa00b59398a0c293198b5e",
+      "src/components/ui/shader-background.tsx": "fd5c6536f37e72ce5e2c3acf5fb6e685",
+      "src/components/ui/sheet.tsx": "57d1630c4226f593c2a66adab51d9ad5",
+      "src/components/ui/sidebar.tsx": "83c1623eb50ebc370d7b1b84a542e369",
+      "src/components/ui/skeleton.tsx": "41b182e6e2fc3805960d41e767d4a972",
+      "src/components/ui/slider.tsx": "4752f1bfa26426988d325599e01c335b",
+      "src/components/ui/sonner.tsx": "97f59f60be3413196d095fcbf7383216",
+      "src/components/ui/spinner.tsx": "28b695734ef3b6840b47d713ae3d31ce",
+      "src/components/ui/switch.tsx": "82f5d8b0c59bb7ff305caa9f502e79ff",
+      "src/components/ui/table.tsx": "7cc889989d53894b659903c73aded96e",
+      "src/components/ui/tabs.tsx": "56e725558c2ce72c18243bf51717f385",
+      "src/components/ui/textarea.tsx": "c7aad96fb9545210d53135a96c76ed6b",
+      "src/components/ui/toggle-group.tsx": "ac26383acf721d116ca8e3ab5c5355d5",
+      "src/components/ui/toggle.tsx": "ee8c5adac74e7242b85b544db1a8fbad",
+      "src/components/ui/tooltip.tsx": "67d71db5a1ab935695d1def497f5b8a6",
+      "src/components/ui/typewriter-title.tsx": "6198b0d25a5159ca7c2439c82ad68a9a",
+      "src/components/ui/wireframe-dotted-globe.tsx": "94054aba62745cf414781a4acf0cafbe",
+      "src/hooks/use-auth.tsx": "11d213356076cf02a3c27390558473b5",
+      "src/hooks/use-cookie-consent.tsx": "a665226ddd24195b86dfc70aee63f316",
+      "src/hooks/use-inbox-unread.tsx": "042d99ad832884d683cb58c454cccb3f",
+      "src/hooks/use-language.tsx": "27b3be41cdaf5b71d9648d8538327626",
+      "src/hooks/use-mobile.tsx": "c0a0bdd4638c391a1dd06ac82074e60b",
+      "src/hooks/use-program-workspace.tsx": "3f359c799cc19abbc7802e5b09555091",
+      "src/integrations/lovable/index.ts": "2b281422ef62231e654f8668addb90a5",
+      "src/integrations/supabase/auth-attacher.ts": "dad043cda134d909e52de0346c16625e",
+      "src/integrations/supabase/auth-middleware.ts": "07a7c39fd62f38075d67d5aa0cb189ae",
+      "src/integrations/supabase/client.server.ts": "24c2f9d3dadbb91e13970a31918bc153",
+      "src/integrations/supabase/client.ts": "3a64714432051d16e6cacf8c69945f67",
+      "src/integrations/supabase/previewAuthStorage.ts": "315e4ae3473d92766e0d6d4d83945aef",
+      "src/integrations/supabase/types.ts": "3c9fdb3109e8c18630c3d648d1d9cb71",
+      "src/lib/account.functions.ts": "6130f0989e8f342e26a62c59875d4b69",
+      "src/lib/admin.functions.ts": "265fc0abb3585adc8d21edef5d3fb834",
+      "src/lib/ai-credits-program.server.ts": "305bb742490fcafc9be380893f7dc49a",
+      "src/lib/ai-credits.functions.ts": "9e1dea775c553314381a9b38e1a5f955",
+      "src/lib/ai-credits.server.ts": "77d8038d8e2c22e02807b4479c7fd865",
+      "src/lib/ai-gateway.server.ts": "01ea4ee282f69845466a6307083ed6dc",
+      "src/lib/ai-pdf.functions.ts": "8f2959e8ce126e2f33e258ab20d87912",
+      "src/lib/badge-notify.functions.ts": "310ecd385d9ebdc85eebd6a617355492",
+      "src/lib/calendar-links.ts": "55f6825d3c407db9dcafa648b3d4a85a",
+      "src/lib/celebrate.ts": "c11c40685358188402cb56ff1e9cc0ef",
+      "src/lib/chat-attachments.ts": "ca7c1ca94d233ac42826c0efec1ec78c",
+      "src/lib/cloudflare-stream.functions.ts": "fde8df2e5940ae15683ab005290f8d6d",
+      "src/lib/coach-research.functions.ts": "2ba4e3aa6703cb75c5e2088d078cb2a5",
+      "src/lib/constants.ts": "c91de1a7ef93879882c2f7f7aaef96e1",
+      "src/lib/customer-conversations.functions.ts": "463bf893f3ce32d0be5a5d9e4c9858a2",
+      "src/lib/deck-parse.functions.ts": "6c84808732f454559a8fcce0fcef3d08",
+      "src/lib/deck-parse.server.ts": "2378aad48f7a483afe34940afded153e",
+      "src/lib/demo-startups.ts": "09bd88822319b90d3e5717b91ae69258",
+      "src/lib/download.ts": "59d02a7b220a6ab8a2c439cb43020124",
+      "src/lib/draft-analysis.functions.ts": "da371e4878ed40bd6d0ea938b0235cf1",
+      "src/lib/drop.ts": "01264123d1d896c69462ae85512d34d5",
+      "src/lib/email-suppression.functions.ts": "83f35d353ff43574cf6d8748e00a0772",
+      "src/lib/email-templates/challenge-deadline-reminder.tsx": "19b5ddead4edb97bec3bed347a167a5d",
+      "src/lib/email-templates/email-change.tsx": "36fa79f1737f6cff019eb3f1f087083a",
+      "src/lib/email-templates/inbox-item.tsx": "910eccc858af2d4f347d14584f867386",
+      "src/lib/email-templates/invite.tsx": "ac3b0bb2856c98773231546425c1ad25",
+      "src/lib/email-templates/magic-link.tsx": "815b2d9819ae0716a0d30921c469be19",
+      "src/lib/email-templates/reauthentication.tsx": "4823b907c290c73cec183183db0d6bfe",
+      "src/lib/email-templates/recovery.tsx": "909a69e9f31889c347dd438fe3496335",
+      "src/lib/email-templates/registry.ts": "36e81af61b278b2492f7a0aecd625b1b",
+      "src/lib/email-templates/send-email.ts": "a11b503ddefc464ddeefe36375f4f414",
+      "src/lib/email-templates/signup.tsx": "4028bf43d91578e6fc8908fc453c62ef",
+      "src/lib/email-templates/startup-profile-reminder.tsx": "d0d041e161239fe6a324a2a7a88cdadf",
+      "src/lib/email-templates/teammate-invite.tsx": "7c8b4cd81e34880bf1e2c1a8b31c55b3",
+      "src/lib/email-templates/weekly-update-reminder.tsx": "4558225aecfa6170ff6d8405164d00a6",
+      "src/lib/error-capture.ts": "2eff764b160a5753bba75a240517c9d5",
+      "src/lib/error-page.ts": "8da0ddd7569bac2676b9a5c8edff8a36",
+      "src/lib/finalize-update.functions.ts": "7faa269e888aa7dcfdbbe13b454d3254",
+      "src/lib/finnish-accelerators.ts": "2ceec25ad20d54d813a3b703f94cf198",
+      "src/lib/founder-account.functions.ts": "5a30a2d4416875c58a88a1bd2cbf8d18",
+      "src/lib/founder-ai.functions.ts": "9aa84e1d770f593efc4c4f3f0319ac54",
+      "src/lib/founder-ai.server.ts": "34327dd5cf3a7d80c632c69d868ee4c1",
+      "src/lib/founder-match.functions.ts": "0584ed9e9de5d026c447b99ed95bbf32",
+      "src/lib/founder-match.server.ts": "0a6fec6ccfa41ff2fe5e9204aef69512",
+      "src/lib/goal-alerts.functions.ts": "50652ead798c081cea23684615894423",
+      "src/lib/inbox-email.server.ts": "765ea6e0e68f8921c9cdade06971d795",
+      "src/lib/inbox.functions.ts": "c3beae728fffc4493af32a82601ec76d",
+      "src/lib/investment-geographies.ts": "949c38ca3f9a081fe630d51ed0d6211a",
+      "src/lib/investor-research.functions.ts": "314eaf6b034219f206dfcd628c17f42a",
+      "src/lib/investor-research.server.ts": "ab79ac549d8cd56bfd1c16a3f85b580c",
+      "src/lib/join-intent.ts": "541cf68a598f9c5b35e8859e0c2afed4",
+      "src/lib/join-role.functions.ts": "6ebcd5a6fddc31638f2ff627e456c9a5",
+      "src/lib/linkedin-import.functions.ts": "cf98fc3a79602f1d3159d20a7a5e92b5",
+      "src/lib/linkedin-profile.functions.ts": "8635f504bbff0578e837277e7375eb6d",
+      "src/lib/live-sync.ts": "788765d20e34365a268abc1cd73563bd",
+      "src/lib/mcp/index.ts": "da35bfc1a7f58dccbac777e31e4a5b4f",
+      "src/lib/mcp/tools/echo.ts": "1be3cc2ae871ca73fe2f5715e051a60e",
+      "src/lib/mcp/tools/list-public-startups.ts": "2ac5d332c06d3aee623a48858937e42d",
+      "src/lib/mentor-match.functions.ts": "7e28286adf4f95a3f52df6d455815515",
+      "src/lib/message-delete.functions.ts": "df247109f00b5a6342c1dabc49cf4aa9",
+      "src/lib/onboarding-tags.test.ts": "04bf0556812b889e3a1857ac649de91d",
+      "src/lib/onboarding-tags.ts": "19606e7fad491cffeb55aa45fb9b1bf3",
+      "src/lib/pdl-ai.server.ts": "c412f8933c6799af356ce1de64c8b1d8",
+      "src/lib/pinned-badge.functions.ts": "8d7e17b28862874bd881517373d1cc07",
+      "src/lib/pitch-aside.functions.ts": "c10676cc337fc6fda5467562ac1b001c",
+      "src/lib/pitch-deck-quota.functions.ts": "6c5e2d5d12ea1056f24e0613afd6bc2c",
+      "src/lib/profile-completeness.ts": "601b4ce299de8c5c5b10b26ad16b04b9",
+      "src/lib/profile-prefs.functions.ts": "058114c7369511019ea70ec39132c8e6",
+      "src/lib/program-admin.functions.ts": "f083c095dc0ad37adf5355550939e577",
+      "src/lib/program-admin.server.ts": "8b2a54d6cc028e7d4c3e667bec238d9b",
+      "src/lib/program-ai.functions.ts": "850f016d5f53c876cbe486cc460f74e7",
+      "src/lib/program-ai.server.ts": "864bf55deea2a13f347147fde3cd8d31",
+      "src/lib/program-backing.server.ts": "61bd8f6f06d19bb7fa580ebe16bea05d",
+      "src/lib/program-badges.functions.ts": "c27820e3f4d63477b62de330205a4571",
+      "src/lib/program-comms.functions.ts": "8051c3f70651ae73f29687d42f6699aa",
+      "src/lib/program-connections.functions.ts": "daf5d3c5695a3a97fc0055cbf05ccf73",
+      "src/lib/program-connections.server.ts": "e7aeb93d8e9987b6c7e3c6676baf2d93",
+      "src/lib/program-content.functions.ts": "7daf72fedb2edfa836f8e58237813e17",
+      "src/lib/program-content.server.ts": "279120089b3918e2977e17de0184b859",
+      "src/lib/program-crypto.server.ts": "e3d47e74ca3b60eb5ec13293a680a0c3",
+      "src/lib/program-dashboard.functions.ts": "640d971e457a98d2ac5890f3447d2719",
+      "src/lib/program-dashboard.server.ts": "eb704261796ab814db33f593af25b0ea",
+      "src/lib/program-export-helpers.server.ts": "a65507b900cc6ed368f4bd905cb4428e",
+      "src/lib/program-export.functions.ts": "d8d6d5af9074834e0f85cc7dd6a4df20",
+      "src/lib/program-founder.functions.ts": "63a6db7410b65c984bd6304a73da7ec6",
+      "src/lib/program-invite-storage.ts": "ef34ea93468bd490a2bfd1c413bfb15b",
+      "src/lib/program-join.functions.ts": "be63cdd0c89861df4087e5e961adefe8",
+      "src/lib/program-kpi-status.ts": "b041b9014ecfffc797222fed502b0d04",
+      "src/lib/program-kpis.functions.ts": "f266368d18021d359f45144c8c4d01a4",
+      "src/lib/program-mentor-match.functions.ts": "b5b5ad1b4a90ea79cdf70d35e58bb51e",
+      "src/lib/program-mentor-match.server.ts": "c5aa3d54422253b56b862ba60c847a9b",
+      "src/lib/program-network.functions.ts": "7820f4ab7f9feb755babaa9ee2972603",
+      "src/lib/program-pdf.functions.ts": "d51df1f2ff5792349c0e6389530d34a1",
+      "src/lib/program-people.server.ts": "caa549bac262678a9e4708cb980b72bf",
+      "src/lib/program-session.functions.ts": "385e302b82ced5c5b2110a8762698ae0",
+      "src/lib/program-session.server.ts": "0e30bf65248a6f18ccb29952226124d9",
+      "src/lib/program-settings.functions.ts": "a36df0cc922532e8e28bf486c7e8a1ca",
+      "src/lib/program-theme.ts": "8e3742a03da41154d6a7b1c88ce45429",
+      "src/lib/program-thread.functions.ts": "8edae355c6f7c661280e7fd9e56c05df",
+      "src/lib/program-update-view.functions.ts": "004f36579af57635c90baeb95d61d9e8",
+      "src/lib/progression-cards-latest.functions.ts": "a165a63751d6b52b65573dc04473b1bc",
+      "src/lib/progression-cards-replace.functions.ts": "8965b73caf907b7b5cfabd59ec163280",
+      "src/lib/progression-cards-update.functions.ts": "f21a040b63974ab5fab400618647e50e",
+      "src/lib/progression-cards.functions.ts": "d69c676ec0c2ae97861216940081dfad",
+      "src/lib/public-profiles.functions.ts": "3e50c6444f899e6ef01f29f723c3fbdd",
+      "src/lib/recent-team-badges.functions.ts": "85bad2ea7aacd23198a05bc132ec7b68",
+      "src/lib/reminder-cap.test.ts": "92a6ad13b9fdb0e62e4329af49c1f8c3",
+      "src/lib/reminder-cap.ts": "09d97aa6f462a31f49252b7be4122821",
+      "src/lib/request-errors.ts": "5daeb0e4a3245a1549c82d0d578e37a7",
+      "src/lib/resource-preview.ts": "53dde6e4a35012d16d031ea9c17c2808",
+      "src/lib/role-assistant.functions.ts": "d3e52a36d454bb6f531d933b611a1617",
+      "src/lib/role-assistant.server.ts": "c8a9f5ac33b7dfd5cdd50bd2b9d7df50",
+      "src/lib/role-home.functions.ts": "65cff6199633fdd29b5ad4f6d3987c6d",
+      "src/lib/role-home.server.ts": "2d2216ebcaf1f85bdc4d1e9f45861d8c",
+      "src/lib/scribe-token.functions.ts": "e342ccf0db27843d02e83c75138b653d",
+      "src/lib/showcase-startups.ts": "2c2e261513f7828faa205b68871aa87c",
+      "src/lib/slug.ts": "03b27abd344d28ca5374c9f6072957a1",
+      "src/lib/startup-follows.functions.ts": "f78559c0f01260df1b2ae1b92c3b2ef9",
+      "src/lib/startup-limit.server.ts": "12c687881c0d3ab9cdcd7ccf50b4fe75",
+      "src/lib/startup-limit.test.ts": "09dd3136142986c9c67c78c3764ce505",
+      "src/lib/startup-request.functions.ts": "23cb31a0dc8e9c2f42efdf827f9e01de",
+      "src/lib/startup-resources.functions.ts": "e1d27eff7a575b49dd23447b09ea3fd3",
+      "src/lib/startup-resources.server.ts": "ade7f7aaa443bc54722ed2f16627b619",
+      "src/lib/startup-saves.functions.ts": "7ef27616ad2e9c2c8eeb874972d1f88f",
+      "src/lib/startup-team.functions.ts": "c4b44b0d068dbeff691d52e0423ef154",
+      "src/lib/startup-updates-access.functions.ts": "d917449d26e4174e1ebe7e187a2770d2",
+      "src/lib/startup.functions.ts": "7e0329b0e86d2122bb3d43cad98a103d",
+      "src/lib/streak.functions.ts": "cb5e759599d9017c0b44b3852ecd3497",
+      "src/lib/streak.server.ts": "dbade1150751568bc982f33b7f95354f",
+      "src/lib/suggestions.ts": "fee21d2230d6192dad5f65d3b55521d7",
+      "src/lib/team-update-view.functions.ts": "f218b58df07f90a73e85255e904e3077",
+      "src/lib/testing-mode.ts": "512728534f598361774788ef18795513",
+      "src/lib/tracked-questions.ts": "8055dda048a03f2f80dfed66d8a8c5af",
+      "src/lib/tts.functions.ts": "af2a051b9c824b97b17ff1a4df2e2318",
+      "src/lib/update-history.functions.ts": "dce4b9de2db6a308d978c7666e38bd8a",
+      "src/lib/update-history.server.ts": "2fd51c8ed7d26c78a65f3406aecaa0ed",
+      "src/lib/update-questions.functions.ts": "319b7530b081e03bf0ab79cc3334e493",
+      "src/lib/url.ts": "b26592150a06b6df5b50d9e05fc38ac4",
+      "src/lib/use-go-back.ts": "742a7bc9bf879872ef26e11075abb335",
+      "src/lib/use-startup-experience-sync.tsx": "e5f1dee87e1a914e6ba5bf011457c7bf",
+      "src/lib/utils.ts": "d9837f38cc05303254571985e3164050",
+      "src/lib/video-engagement.functions.ts": "627c00f251d276f7b585f631ef6ea4bf",
+      "src/lib/voice-transcription.functions.ts": "46207ab7140315da18929fe9065aefc2",
+      "src/lib/week-bounds.ts": "0f30a68886b582a12dd40f024145ff13",
+      "src/lib/weekly-current-week.functions.ts": "dec1e398831039c995438aa8272cba5e",
+      "src/lib/weekly-goals.functions.ts": "abfc22d0fd537ae011392404160784c6",
+      "src/lib/weekly-updates.functions.ts": "44b97e31134ece60dc6fde99fd500952",
+      "src/lib/xp-awarder.server.ts": "76e5e003c149a3175826da55da09fd01",
+      "src/lib/xp.ts": "9a0008e59d31a151a3f53bca1c6dcf9d",
+      "src/routeTree.gen.ts": "c433d0732e37343dd70e44b57b6f6f26",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[.]lovable.oauth.consent.tsx": "f2c8291b928db10698946e2ea1baf647",
+      "src/routes/[.mcp]/invoke-tool/$tool.ts": "2cc296128352d61d70726e7428ef5ca5",
+      "src/routes/[.mcp]/list-tools.ts": "bc1d258eb3237605d066b9a536a63d5d",
+      "src/routes/[.well-known]/oauth-protected-resource.ts": "2dbcc907a7d3ab43955e6dbbb99e7a1d",
+      "src/routes/__root.tsx": "a3ffbaaa0102de5153783407cd5d4013",
+      "src/routes/_authenticated/admin.tsx": "5a260fea469669ab330f03d5bf25b1b8",
+      "src/routes/_authenticated/coach-onboarding.tsx": "d7e1906c57393c880799dce11e8abb09",
+      "src/routes/_authenticated/founder-onboarding.tsx": "d3ac807efa67402ba57ffa8377244446",
+      "src/routes/_authenticated/investor-onboarding.tsx": "078637b9f2780595971714ca11f124b3",
+      "src/routes/_authenticated/investor-profile.tsx": "0876ed2024bd84e89339cffa94d27156",
+      "src/routes/_authenticated/mentor-profile.tsx": "faf965d6ce0f8444a9af813a1af611f8",
+      "src/routes/_authenticated/profile.tsx": "1ad8c1905fae6e84da4db0725f65bbf2",
+      "src/routes/_authenticated/program-content.tsx": "e060202dbb4fb3d2b3182652c6b95536",
+      "src/routes/_authenticated/route.tsx": "9c7a0db3520a5fc008e5c4cf37b7eb58",
+      "src/routes/_authenticated/settings.tsx": "5ac390915300854e79d09eaf65f9c3d9",
+      "src/routes/_authenticated/startup-updates.$startupId.tsx": "77df7988955afcfa070895e119776914",
+      "src/routes/_authenticated/startups.$startupId.pitch-video.ai.tsx": "4657d6d738aa4f0db1cd1963da65a81b",
+      "src/routes/_authenticated/startups.$startupId.pitch-video.upload.tsx": "128147ab31a8b1d792bdaa5ccbad8730",
+      "src/routes/_authenticated/startups.$startupId.tsx": "dd574f4032b8a54a8b109e23ec0ecd5b",
+      "src/routes/_authenticated/startups.index.tsx": "d8680053e7d7cae5970569d17a70b513",
+      "src/routes/_authenticated/startups.new.tsx": "68760f49ec7629dea960ea03593478ac",
+      "src/routes/api/founder-chat.ts": "0fbf11dfff03c48012880480ee164302",
+      "src/routes/api/program-chat.ts": "0fbf2e632adc6e74465696132a227900",
+      "src/routes/api/public/hooks/challenge-deadline-reminder.ts": "8c916215656246165e05a5159aecd9be",
+      "src/routes/api/public/hooks/founder-startup-reminder.ts": "efe3611f28baa16025c9b58cc2dc47cf",
+      "src/routes/api/public/hooks/goal-alert-check.ts": "281947be7345d2b8874d75a5532a3549",
+      "src/routes/api/public/hooks/refresh-startup-resources.ts": "4d0b07528858da510e9d4c7f229e211b",
+      "src/routes/api/public/hooks/weekly-update-reminders.ts": "4c5fe263bd86440ff7e0b48ddbd4f1b4",
+      "src/routes/api/public/program-logo.ts": "2d6c2fd5ed49a3083036207c57090ffc",
+      "src/routes/api/role-assistant.ts": "d87102668dcd406f298baea1e6ad226d",
+      "src/routes/auth.tsx": "f035ceefa689a318e2d66ba6a44ac570",
+      "src/routes/contact.tsx": "cbc6bfed905b0e0f00cf3ef601886aac",
+      "src/routes/faq.tsx": "bfdb66d37ccc6bb449f6d54ef77204fa",
+      "src/routes/founders.tsx": "507d691b2fa396291ee8cf9c1838f2ce",
+      "src/routes/how-it-works.tsx": "346c9853919676dca8005daec6c98d8f",
+      "src/routes/index.tsx": "43101f3ec5bd3e7f645474a4360ce703",
+      "src/routes/investor-waitlist.tsx": "3d5ea06cc29f30f3724210492321cc43",
+      "src/routes/investor.$handle.tsx": "e2c0137d80b3dd640dd7ca7252b09fe7",
+      "src/routes/invite.accept.tsx": "08d513ab66bf9a290afed58861c54c96",
+      "src/routes/join.accelerator.tsx": "0ce3eb15f36e296699d1d343ec7c9f74",
+      "src/routes/join.index.tsx": "c1f9818ea975b15eac091a1805e55a32",
+      "src/routes/journey-demo.tsx": "1e29d33fb94ef95f969a578246001805",
+      "src/routes/login.tsx": "a5520446835188299bf90aa8fba0977f",
+      "src/routes/lovable/email/auth/preview.ts": "d9de59ff2313d10a53c164ee7be754da",
+      "src/routes/lovable/email/auth/webhook.ts": "db4688e1b0c448d59d255847bcecf4f3",
+      "src/routes/lovable/email/events.ts": "043f8b33bda730c61d28f75c87d444ee",
+      "src/routes/lovable/email/transactional/preview.ts": "04c9b9a4ef204d62a0ce0d32d47e0c00",
+      "src/routes/mcp.ts": "300ada44271329e833b338d197b2395b",
+      "src/routes/mentor-match.tsx": "41ef1f10f6c7758efa2f41d744ecf2f5",
+      "src/routes/mentor.$handle.tsx": "b3651cf50abe4e3d121874ef449ab32d",
+      "src/routes/moksh.tsx": "8159476e23c15fe1d8261bb23f966c94",
+      "src/routes/post-auth.tsx": "ba76f206f3c2a9c76f473e0145b57d02",
+      "src/routes/privacy.tsx": "8be3551ef3745385c0759d0bc961f6dc",
+      "src/routes/problem.tsx": "5451825987c8dfeef8f4f984000e5ebd",
+      "src/routes/program-join.$token.tsx": "5e9c8b6c6d4ef8c14c6c0b5ef9de3bb4",
+      "src/routes/program.$slug.approvals.tsx": "8999588f25066fa31c62772726c97e96",
+      "src/routes/program.$slug.challenges.tsx": "0211ffba6caefc5f88f9b549db1f8291",
+      "src/routes/program.$slug.communication.tsx": "cc31d91ef0d7b81053bf2b58a404f65a",
+      "src/routes/program.$slug.index.tsx": "1a559b470a73b5a3f54daa65afe02ef1",
+      "src/routes/program.$slug.leaderboard.tsx": "f00172cc4d0062d4ec9eda95665c41b2",
+      "src/routes/program.$slug.network.tsx": "c8395baae53814c347cec590921b409f",
+      "src/routes/program.$slug.startups.$startupId.tsx": "7e8ab2fa9bb63187eb46d59ccde59eca",
+      "src/routes/program.$slug.startups.index.tsx": "c08ce03e6078d01ceec35f0af1a1a0ff",
+      "src/routes/program.$slug.tsx": "c265a50cbb494734f719e7fb46cec3c5",
+      "src/routes/reset-password.tsx": "bdc649d6e4dd9faf078dac8b60e48557",
+      "src/routes/sitemap[.]xml.ts": "499867f6ec55a192dd28e462e98d0811",
+      "src/routes/solution.tsx": "53d72959dddf6c497fdb1d955fd9dfd7",
+      "src/routes/startup.$slug.tsx": "e1b13ed0fc1698ecd7e813ce59ce564f",
+      "src/routes/terms.tsx": "3d80c91b05b23aa04b61c9b873572dd1",
+      "src/routes/u.$handle.tsx": "9d2707de58f2f258fedae02aecc778be",
+      "src/routes/video-pitches.tsx": "80558ef00b1bbc4c3888b4323ae7e29a",
+      "src/server.ts": "f5c5ed7f28e5bdc081e96b045b9b5055",
+      "src/start.ts": "df9f208900447034316b44806ea4e9a3",
+      "src/styles.css": "0976685d55142a26382820a95fb81111",
+      "src/types/lucide-dynamic.d.ts": "f444a0c3df4ce908195e816570fecdc9",
+      "supabase/config.toml": "b3275dfa59895c3d7a43d23e03bd6496",
+      "supabase/migrations/20260517000258_346fea1e-944c-4ff2-9d4c-e6643352f67f.sql": "76a328a424ae9b4c784bcaa3c5dbeb53",
+      "supabase/migrations/20260517000337_72090848-c2e9-423c-8f99-94d9e94b3af6.sql": "2236479b69dfabe4d5ef0ca411b82d91",
+      "supabase/migrations/20260518040447_78b68bee-fa73-4068-9237-45340ce3a5db.sql": "abb9a8cc0f24b468a3ee9434adf405b5",
+      "supabase/migrations/20260518145143_195897fd-e664-4f9e-8a95-130c16f0843a.sql": "8f36b7203e67199e004122b221297a21",
+      "supabase/migrations/20260518152538_01af6f85-08a2-46df-93f1-0e0186586d1b.sql": "b8614889ceaafffbf1c60de496234359",
+      "supabase/migrations/20260518154135_b96b9696-174e-497d-bc5c-c7f59031c4b4.sql": "224da5eafda4e15829e901cc029d6c67",
+      "supabase/migrations/20260518154227_54239e0f-c598-4400-9dec-1fcbe8cee0b8.sql": "3dec214f5a02502be73d7b56a8af040b",
+      "supabase/migrations/20260518160741_35cadbda-142c-4c82-8a84-3836ea61aede.sql": "de040da8e2c7179fe129bae83d67fe72",
+      "supabase/migrations/20260518162210_3ae76801-e56f-4ba4-9dd7-6ba56d4de7f4.sql": "85a5bac65722e467a80eac847985080f",
+      "supabase/migrations/20260520094127_4fd57066-cb3e-485e-ab36-fb6b4a475de3.sql": "da601421be6baa5b307da1e3dc11c5d3",
+      "supabase/migrations/20260520161702_d78aa091-20dc-4325-a810-c7764d5c0c07.sql": "5407844ef7a99722546619cc978d63f8",
+      "supabase/migrations/20260521191951_bb71d582-656b-4e2f-90de-e208d8c71063.sql": "7cc1d3745311fe22f57249d46e0b5fa4",
+      "supabase/migrations/20260604014907_82220877-1d6c-4a74-aec5-a3740e611b98.sql": "9d0b0cade08ce5cb09103c4acc36b38c",
+      "supabase/migrations/20260604022240_8376a940-0b45-42d5-9f48-279bdfb1dc29.sql": "86388bc2c2165ed32a0a2873186a3200",
+      "supabase/migrations/20260605164235_601ab13d-9709-4a0a-8af9-6bcebeabc31c.sql": "2a70e02ba36368465357c941987b9d9c",
+      "supabase/migrations/20260605194620_2d181eb1-e269-40a8-b256-f02f9f1ac49e.sql": "9771d1ce1932e844eece9a6155605309",
+      "supabase/migrations/20260605202044_0e6f2781-4af2-4777-b747-c60c714e1884.sql": "0787eadacd06a8fcbe5f5cdf08a53c94",
+      "supabase/migrations/20260605211128_5c7a8b9e-520b-45a3-b32b-11a7e9fc25fe.sql": "b78b12c1467421260d6d647fe1fa5e3b",
+      "supabase/migrations/20260605211359_877e147a-3d4f-494b-b9cf-c6a223179daa.sql": "858ed2102cad7f8503ad22c1dae9f836",
+      "supabase/migrations/20260605211643_44b7e339-4c8c-4a33-8e89-8cc7f0074338.sql": "980fb1ccc616727e440a26e50c684cd5",
+      "supabase/migrations/20260605212540_a1c1a63c-3d96-4c8b-9f4b-e3ab220a38f3.sql": "3fda8ae7ed259ce550e053fca25f4505",
+      "supabase/migrations/20260605212952_58513394-4bf9-4045-8d9d-103ef8b296c1.sql": "907a4f37fe13135272e5053b6e9ec5e6",
+      "supabase/migrations/20260605224611_47053afb-5856-43a4-af75-703bd3378d32.sql": "fd357b5091437d307875082eda6de6b6",
+      "supabase/migrations/20260606034138_d4dd13f4-296e-4590-a8a8-d1179d5ecc17.sql": "3853521aba3e7923b291018ec8ae2674",
+      "supabase/migrations/20260606172829_959006b3-23df-4cee-bad2-a1775c8c2c04.sql": "15096df63befce1c166fb4f29ba96714",
+      "supabase/migrations/20260606172901_893ce2ba-d717-4344-adc8-a6c6a00a80cb.sql": "58dae50d96b435f41faec86445237fc7",
+      "supabase/migrations/20260606184950_0f5a9f47-7913-4f97-aa85-2440832688c9.sql": "4c9f9a3991322d47dc09d130e239d670",
+      "supabase/migrations/20260606194833_b1bb8ef1-8b35-4908-b6f6-1384ac7e3666.sql": "1f2029dadcd5fa39eac00298fa2a2c2b",
+      "supabase/migrations/20260607171157_dc7bdfa1-df5c-4fe3-950a-12114b2274b1.sql": "77e0279bbcd232bc8bf2daa7e9a42c04",
+      "supabase/migrations/20260607173300_d6e7a44e-7fca-40a6-be72-0fd9bbf1ccd7.sql": "2096348f0feb90fb6ec1288f2cd18749",
+      "supabase/migrations/20260607182615_7d04acff-34f8-4b5e-80f8-ad83431340cc.sql": "3488806097e33cf336f3ddc980c1be94",
+      "supabase/migrations/20260608171440_c3d7d83c-b4bb-47a7-aa3f-470547c378b2.sql": "e46f765483a638c3750c66e970825f7e",
+      "supabase/migrations/20260610032027_b4a4931c-9997-4976-a9cd-e9765a384f2b.sql": "d9e3a1a7d7158ea429d268af4065601f",
+      "supabase/migrations/20260610042457_8eef9b9c-9400-4262-aebb-5f861d3765a6.sql": "56464907878829f99199144d20184afb",
+      "supabase/migrations/20260610103820_ac48a81e-5224-4dfe-ba41-d7ce33331135.sql": "3af4f183fc440b5c353b58643769596a",
+      "supabase/migrations/20260610152740_8c7d4e9f-0296-49a3-9070-3c734430f6f9.sql": "db3a0594a8a7fcc4531bbf817a1ac416",
+      "supabase/migrations/20260610155235_37a88094-9548-40db-8a39-65756b1c2232.sql": "91fa46d0e7044aa0e87c30052ebe5105",
+      "supabase/migrations/20260616114250_6ab52761-277e-4766-82d7-6622c0b86895.sql": "a6499a32210ef26cb17c097428be6767",
+      "supabase/migrations/20260617170334_4af2e245-5193-47ea-bcc0-99d52e2a8a71.sql": "fa14b3f7135dabb0f8037464f179def7",
+      "supabase/migrations/20260617201051_22528dcf-5287-4b21-a426-a9f0c1bf1171.sql": "a7ea0f025eb4d737f7dc11f8c1069da6",
+      "supabase/migrations/20260617201127_72e075c9-c6eb-4a3b-93d1-b83e91b3cee8.sql": "ed9e242b50723c853191ad38f4a651ab",
+      "supabase/migrations/20260617202833_5d5fc66a-5fd6-4891-bfdf-eda268c64254.sql": "76106b977cda5434e69ad4ad944e4838",
+      "supabase/migrations/20260618075749_20d29ffc-9afc-4958-900c-5c4287314145.sql": "bf6cb210f3d446bcff306c0638903d48",
+      "supabase/migrations/20260618114932_4e3277aa-50a0-429c-af33-91d3a4991e1b.sql": "92d938360aef3505a13018e723daf176",
+      "supabase/migrations/20260618131600_fd6ac374-a1c2-4e1f-a0bb-a5c6870a9c2a.sql": "930aea3a417a1e46582fefe02cb8ac7e",
+      "supabase/migrations/20260618145058_61feb629-547a-42bc-8336-874041264f8d.sql": "8ed30531ac325bf5c3b1ef91369a0198",
+      "supabase/migrations/20260619141417_cc161ad7-06c8-4781-8d31-f3d89e83ca25.sql": "9bfc56888b1c06b318b1af7084b57ecc",
+      "supabase/migrations/20260620103614_29d479bf-243c-49df-9114-9a4582a2bb8a.sql": "91e2a0bb86d72fb7351cc710b752ae6f",
+      "supabase/migrations/20260620105648_6c8ca9d3-c903-4ce1-8952-90e769a9f7e0.sql": "aa563e536377a76b85d6ae8ac9b6c402",
+      "supabase/migrations/20260620120206_1525db30-09f0-4e0c-91c1-d0af937d9f8e.sql": "8047bb5d1872931cbfc25c43862562b9",
+      "supabase/migrations/20260620134556_41425291-3ed7-4030-b153-fab169887b54.sql": "091fb5317fba297f872871c1d6691076",
+      "supabase/migrations/20260620193045_5f4a73fb-3ed6-4480-adb2-33cd3ccd5f33.sql": "a55578d15f3e09c56c1e599be7582ad7",
+      "supabase/migrations/20260620211337_6702a32e-e9ea-4d2c-842d-7fe1160f5d75.sql": "28d3c3e5c9f7c86c42d7e8bc8d302a3a",
+      "supabase/migrations/20260621110541_3a881334-d33d-42bc-af84-5cad009c8794.sql": "07cd657b44a47943935b4f642e0beb3d",
+      "supabase/migrations/20260621110752_489d5b9a-f40c-42a1-8b05-c81a76c9c917.sql": "d1db0e609163053500bc2b29780d67a4",
+      "supabase/migrations/20260621110830_f299886c-0ad3-4e8b-8917-9b36848ee368.sql": "bb627f8b2d1795136bb7713b22e153a3",
+      "supabase/migrations/20260621123914_8b2fedc5-a44f-4846-8084-0fc575af6b00.sql": "1ae11701ad943fba90b94f714cafd2fd",
+      "supabase/migrations/20260621124049_b9864103-54fa-45bd-950a-9fff29593b26.sql": "d99eb534dba200e05c10236a0b370ade",
+      "supabase/migrations/20260621154719_823b5e33-cc1a-49a4-8906-8549def25349.sql": "2dd96a30b839edaa6787471ed1bfcb31",
+      "supabase/migrations/20260621154959_73b30988-fc2d-41cc-aa6e-3bdcade1ccc7.sql": "f5e6b2e2a6871cf29bedc7c3cd6e4422",
+      "supabase/migrations/20260621181036_41e34433-50d6-4e9c-91f5-e84e31d245ad.sql": "50340e3a20744cadb005c3ac8f68456a",
+      "supabase/migrations/20260621200402_f312ca17-d8cb-4ffe-a311-c086f1f972f0.sql": "7fdf165d1e8ce92cf791b7fb851f93e6",
+      "supabase/migrations/20260621200501_2fc1940c-e3d3-4f9f-ab05-4a7b2d384406.sql": "c8a973f5ce520a301370818b83e5038f",
+      "supabase/migrations/20260621204628_8c4093a6-b173-4646-9c45-fd6623485b0b.sql": "de92a05e0c2c07dce04efa3ff9d051a7",
+      "supabase/migrations/20260621211336_b7b2b51b-95b2-4e4a-9dca-5485aca59317.sql": "f9e9218c0e1a85ba0f3d54ac74f45235",
+      "supabase/migrations/20260621211349_6f3e8b69-595b-45a0-9473-3876777a6ce1.sql": "a5a19b863588bc0afa49060f843341c4",
+      "supabase/migrations/20260621214511_2444147b-f6d1-44ae-9fa1-4ad71828dc70.sql": "63b48bc8d0cc40153f4d75af2d37b763",
+      "supabase/migrations/20260622011251_f65bfb13-0ad6-43dd-96a1-5045f4720398.sql": "6bb8d054e5f64ba63bcbd54f4f7ebb9a",
+      "supabase/migrations/20260622070811_645e936a-91b7-408f-97f1-8575b39c8656.sql": "a17a8b18d3488d478d800074164e28d2",
+      "supabase/migrations/20260622111619_e925de7d-d2d6-4fd2-94e3-caea4db075e5.sql": "c87a9891960434e18d473988b7294e1f",
+      "supabase/migrations/20260622114935_f34d8909-4676-4da4-9ee0-cfca0eb8f5de.sql": "4b317fac4da1b296ee423c862b4dbadf",
+      "supabase/migrations/20260622121829_b9c56a93-ac59-4ea6-b7ad-e78d7517c94c.sql": "efde27ce8644f9cfd1cc3246cebc898a",
+      "supabase/migrations/20260622125050_55d00521-2622-47a5-b6b7-8b572758184e.sql": "9be6601b4dc791fc124b2a80e66192da",
+      "supabase/migrations/20260622125157_e7824e8d-5653-4b9f-a645-e5e9dee744d3.sql": "6cfa6e20f26e32706a164e948aad09df",
+      "supabase/migrations/20260622202010_c5acbdb5-fd0f-4a71-ae85-a1df00e553ab.sql": "9b070823e7b92594026c46555b90921d",
+      "supabase/migrations/20260622223434_988a5350-ebfb-4cd7-999f-a92413d552ee.sql": "5f7404b0745a040d8e649abc608e5610",
+      "supabase/migrations/20260623075701_5c5bfbf8-ad46-4579-8b87-b99b250c44a3.sql": "000ac17c3349336f9da380f641d797ab",
+      "supabase/migrations/20260624172121_3e62a308-5774-44d7-87ee-09ec7a02e1c5.sql": "b7d1b1caa2a997f4b265e1b745217c62",
+      "supabase/migrations/20260624175626_3932fd75-077d-450d-89fb-28ad3023f23b.sql": "e1a93920305adb872628512fad1fbe72",
+      "supabase/migrations/20260625130341_e4bd290b-24b3-45d3-987d-7bf34069edfa.sql": "b4fa9a481ec52242b3f736891925f098",
+      "supabase/migrations/20260626104315_29e90598-adc2-46c0-a5f7-ac85600556bb.sql": "c630ef3ac263a50339488841b3b60219",
+      "supabase/migrations/20260627162249_27bf9545-dfaa-4f68-b416-b50c116c0b5b.sql": "ebbb78e5b8cad3b904e4326cf814ec4b",
+      "supabase/migrations/20260627162352_0537fd70-8402-4a78-a0d2-e6a75f0cf966.sql": "42d04c1ff51d0ac56d6b9ea655b3e8e4",
+      "supabase/migrations/20260627164328_64400da3-8d92-43aa-b07d-950a8c443c99.sql": "b760451efa52dc85aa0cf625858276fe",
+      "supabase/migrations/20260627170907_637c2d4a-dfa4-45d3-a102-f3ca72bd7e61.sql": "b9d9db1aa52f88a7b58eaf0341d5343e",
+      "supabase/migrations/20260627171137_3d8e143d-a0ad-4bad-8c14-24090145b894.sql": "87a5e2b6b0d3426dc76d8cf4f7a21b42",
+      "supabase/migrations/20260628193549_6eafedb0-b239-4d5e-81e3-b8cdf545a780.sql": "6635647e837436ce12fa5229371bf6ac",
+      "supabase/migrations/20260702001706_6c6b1bf1-be73-41fb-8711-86e9201ceedc.sql": "c2945b9c470d1432a2ce944519d10427",
+      "supabase/migrations/20260702225830_013053f1-cab5-4cfd-990b-8e798f28e532.sql": "3b33c5b391d09c6d08386bb068aa401a",
+      "supabase/migrations/20260702234522_91e54435-e998-4f73-8dca-b2dedfd41d4f.sql": "eef2e1781517f8aed8c46dffec2859b0",
+      "supabase/migrations/20260704155419_80372e9e-4ee3-49d7-9311-30341d66ebc4.sql": "8910a424732c81c41b9aec8a82a3e4f1",
+      "supabase/migrations/20260705164457_97c3c177-1ddf-486d-9e9e-dd5c3f613115.sql": "f761540fd5c18506b4c41b3597286813",
+      "supabase/migrations/20260707180140_14590e50-80f1-4ae3-a18b-9258fdd62d8c.sql": "4f3a9560160e47e8d832b419713eb202",
+      "supabase/migrations/20260707183146_3c36c8da-1fb2-4405-8a6f-e5d7edfcf76f.sql": "7c10c30cc7812d6fc0cb879f2cf16d32",
+      "supabase/migrations/20260708075236_b10e1b28-90ec-4a63-b7f6-fc40dabbb60c.sql": "fb946c0961bd2ca9f871bd2a29fc0ec5",
+      "supabase/migrations/20260708075903_ffb1d851-dcae-4626-804b-1899d0d7cc94.sql": "cf043659780c172e5f50db90c8b9614c",
+      "supabase/migrations/20260713103603_31b535fd-d5b7-43c8-b59f-19395861c6c5.sql": "c612a13d2fac13ff9344a7ceb7331c26",
+      "supabase/migrations/20260713163805_6915e3e3-f5f0-4709-a83c-f243653bf910.sql": "82227171dd4c1a381873f9f3a59ace84",
+      "supabase/migrations/20260713224411_3c6a7846-6e42-4301-bf20-deb92a1b2ac8.sql": "68e094856172f80dbfaec32419c525d9",
+      "supabase/migrations/20260714155643_7c4ab733-6c29-43d7-8a1d-a05c07a2b796.sql": "5ba08548c25fb6ff351cf2ba334d61d7",
+      "supabase/migrations/20260714165754_db53a9d0-0082-45a2-9cbc-a8c8a21d5891.sql": "28ea0e06cb0513516386c93f330310a9",
+      "supabase/migrations/20260714181944_84b63211-4401-416e-bad8-1c459504f629.sql": "ffc21bcd49a15cf0c489c8f730021a5b",
+      "supabase/migrations/20260715160759_ca3e8c62-18f3-49f4-b6c5-b658822a8ee9.sql": "978fce89ef6c0681c9fde65948a40d29",
+      "supabase/migrations/20260716000002_7a98d9ae-4e31-4fae-9e93-8a2d0e7d9e28.sql": "75a61fbed9b7f0a2a1e1cc14e5ddc5b7",
+      "supabase/migrations/20260729125447_0fee05c3-eeef-459d-b6ee-35528ccdb592.sql": "ed127e2efddd67e7acae616a6148cd01",
+      "supabase/migrations/20260729131748_9de8130f-d936-4ec5-a54e-932d93b8f048.sql": "fa70b4801916fbe32b9bb621664c0577",
+      "supabase/migrations/20260729131834_cf829b17-2b05-43fe-8f3d-017d81d96c66.sql": "9372153757ac30b5cbf01ed73c819dd4",
+      "supabase/migrations/20260730164508_4081976a-5d27-4f7b-9409-0f9cb9d29801.sql": "84b3e63b696750d1df63645dbe08c421",
+      "supabase/migrations/20260801113719_4b1b4f61-26b6-4fa6-81db-9fc25ac7de68.sql": "93dbafaf2237167ee83d7fb8b9474178",
+      "supabase/migrations/20260801222250_ca4050c6-444f-4369-ba11-c9e533c92d10.sql": "960cddac00f5c5dbd161e44877c5be0f",
+      "supabase/migrations/20260801230217_935d4dc8-3e57-4dee-8526-d3d1bc9d1d85.sql": "c19a6b24abb240582b67d181b6344233",
+      "supabase/migrations/20260801230721_ae6fc909-2729-4716-9b12-311ee3c40ce2.sql": "d092d2baddabb40534a379bcd508d00c",
+      "supabase/migrations/20260803201528_8b68d34c-26a7-459a-9270-a487b273ce9a.sql": "02bab470aaf173e58c764ec367f12841",
+      "supabase/migrations/20260804104720_bd574235-e30a-4405-a9ed-443096247f6d.sql": "694aff6dc070c96d40027498c94203be",
+      "supabase/migrations/20260804111153_57081c3d-a3d7-42da-825d-cf37dc72dbf5.sql": "680901edff89a118459623d54322a48e",
+      "supabase/migrations/20260804125154_7d553fdc-60c7-496e-bff1-c218da2c3e40.sql": "78e1a468e33d9fd20092d5629e362ece",
+      "supabase/migrations/20260804172129_9fde4d8b-6bd1-4661-af65-ead8b90c0716.sql": "75572eae10a6659b35582ea22767e611",
+      "supabase/migrations/20260804175331_5882dadc-36af-4f6f-b779-1277efb85e88.sql": "697bd7b36cf199de0c907b98d977fb13",
+      "supabase/migrations/20260805163115_9b707caa-1ff0-48e7-96c2-41f9adf49021.sql": "1c5b665eeba154b2da350e95292ea9ca",
+      "supabase/migrations/20260805164744_201b6ee7-31b9-42ee-875b-e6ca1366fc9b.sql": "25f6a410f84cced1dd30e2c15bc42da3",
+      "supabase/migrations/20260807183423_54dcd3fe-7c7f-4dc1-970e-21f3fac8f0ff.sql": "5712b30b2146dcd48c3b432540237cc1",
+      "supabase/migrations/20260807192856_95d9ea36-6101-4721-8ef7-33dc3e50eb15.sql": "ed02881ce1a7b6ba80359cfc96cb7859",
+      "supabase/migrations/20260807195444_c9e0994e-f554-4dda-a18a-4d6d3fae70e8.sql": "3b069ec2e1363f286f0d4ea714fe1d0c",
+      "supabase/migrations/20260807195845_f9364754-6edc-4eee-839b-2c4b9854dd20.sql": "f2deb1c3c77c10b2b0c82b7dd0f76c37",
+      "supabase/migrations/20260807230832_bda46cd3-50e3-4099-820c-162008c05c4c.sql": "1d65bf0f07a0e7da9cdee155036e9e1d",
+      "supabase/migrations/20260808005502_3d8ac240-6969-4d9b-b142-a2d9f61e61d1.sql": "7126c512a57d22e01a41380b1a5efb0b",
+      "supabase/migrations/20260808014024_270f402e-44be-4ae5-95ae-c5040cc7cef6.sql": "2390b0f36a4edde11029722e35dcedc1",
+      "supabase/migrations/20260810151051_9ff4ccbb-2045-448b-829f-6c84f55fc796.sql": "5c4b2b6cc37ef975e9098bfe28b372f8",
+      "supabase/migrations/20260810221307_c8506802-7794-4e03-b1b8-905e0540bf12.sql": "ea0097cd05a3bf2f925b486eb84cfb97",
+      "supabase/migrations/20260810221812_f4edca48-73f9-405e-b48a-c8bc8618e645.sql": "f9ada8dd18fed1ae448ad392d9580fef",
+      "supabase/migrations/20260811005547_57b0284d-fa53-4c0a-bb3c-ee00403772bd.sql": "20c94e508f70e51e4cdaa4c80f6f45e6",
+      "supabase/migrations/20260811011547_8bd70fce-435a-4d3c-a250-6ffe0bbc4ab2.sql": "f024325733474ff86f2c1b27adc0f366",
+      "supabase/migrations/20260811160543_de901b74-d8ea-471a-8286-33aa9c5a0706.sql": "816fa6429d54aac0b5453ea659d7272b",
+      "supabase/migrations/20260811210518_75de6ce4-7279-4513-b130-2c8e0f8ff776.sql": "381dd208fc58a9891ce0f4637f541b90",
+      "supabase/migrations/20260811230150_132bd471-5210-4f4c-bb7e-90788edd6815.sql": "82c7025116c73434e7376d0fa8949c79",
+      "supabase/migrations/20260813125222_0d64a917-2f26-43a8-a406-fc0f12763762.sql": "96e16ff14314ec2368c11e9669f0cc01",
+      "supabase/migrations/20260813130358_49b67890-7ec3-48af-af11-57ce2fe449ba.sql": "c0cb516e0f7d7a3ebb2504a2fd1a5954",
+      "supabase/migrations/20260815003029_2f8d6a71-318c-413c-9fd8-8794e2ce500a.sql": "909a9be5216eae3fa60ef51cc7bdd9fd",
+      "supabase/migrations/20260815213203_2f79541b-e58d-4ec6-b403-db92dba03eda.sql": "b867a89a65a39c0dad915e6c4b8dc956",
+      "supabase/migrations/20260815220553_d9e97f8b-25f3-47a5-8aff-e4d810203026.sql": "e39f72346800cd337fe3e6117c182ef3",
+      "supabase/migrations/20260816190920_2a6ede82-d41c-4a4e-81a0-2e1989c1dfe5.sql": "bd1fafa06affd1e3688025e425dfb52f",
+      "supabase/migrations/20260817103712_45ebf868-7246-40f6-b3ca-952e24b896b2.sql": "bc812d58e65899f368d67732543b7cc5",
+      "supabase/migrations/20260817215332_3178a7ca-5b5e-423b-8d4a-8b569997552f.sql": "9895f39f167114b0b1bfa60d2463f495",
+      "supabase/migrations/20260819114817_df193190-6e5d-427a-ac76-4a82d2a01722.sql": "ce9e8e64a5b3dc65931c8cc2016e7f12",
+      "supabase/migrations/20260819155118_d3c7ff18-7bf3-484d-b905-e3be9c2faa83.sql": "c82ed751e8f55093d102f43ddfe9ff55",
+      "supabase/migrations/20260819212129_40ae3a2e-dc90-456f-a054-2ebc9fa7754e.sql": "0f11900694c8f2041fe0f44be408bbb6",
+      "supabase/migrations/20260904181712_e27e4af7-f5c6-4b24-b3f1-72e9f01eda77.sql": "45132152a68c2cba02293dc6a2414479",
+      "supabase/migrations/20260904181739_b5117bb3-8688-4f27-9377-5ccab04adf65.sql": "905b1013dd271884fd56009bbe4b1aec",
+      "supabase/migrations/20260905114544_6226836a-21df-44f8-af46-9f34cc550c37.sql": "92a7d3caa4ce03125775507a313d65b4",
+      "supabase/migrations/20260905114624_736aad3c-0c60-4b5d-96c9-13a6e936db4c.sql": "f04b949c3d511d7237d1975ff6b43f61",
+      "supabase/migrations/20260906154228_de13a121-e0a3-48c2-826c-39a774558ce5.sql": "579955cce2a2f5d699e2ccc6d025eb6c",
+      "supabase/migrations/20260908173444_20f68aaa-3e8d-4680-88e9-3a2fe97807bc.sql": "972a729e00bc5178b406b28aad433ada",
+      "supabase/migrations/20260908173742_225d6e9d-0125-47de-abef-fec6be090abf.sql": "5ade251956fb5bce94e79b70a3eb52d5",
+      "supabase/migrations/20260910113538_4fa25790-c9d1-4598-8d1c-659dc8f4d377.sql": "e7c2b02508240a1ef35b89dca492f170",
+      "supabase/migrations/20260910151255_273c3eed-fd6f-4d30-8444-6b44cc734cb1.sql": "0f18cd90371fe5d8ebcaf2a13da1f9db",
+      "supabase/migrations/20260912170601_1a91f08d-c92f-47fb-b02e-aa921c2d7522.sql": "ba32133a16dbe0ecb78daca46b831722",
+      "supabase/migrations/20260913143853_13a3bfc8-7e51-4349-aef6-8c695f98dddf.sql": "d27768d759ec61d522b68f916dd325c2",
+      "supabase/migrations/20260913144723_0a015eae-7e07-4703-8201-5cec60ad8cf2.sql": "9506588ce8231c93be71031534a2e82b",
+      "supabase/migrations/20260913170808_06c67b99-84b7-4d74-a5a2-91b7a5b75842.sql": "8a00df5656bb0e7966024e3aedec7d91",
+      "supabase/migrations/20260914231908_f34b466b-cbee-4fe2-a583-d1ef3b0be383.sql": "9ccbc10dc47e30b25381dec093987ee1",
+      "supabase/migrations/20260919165420_212cb16e-12f4-4833-8a86-5043cf8ef306.sql": "4da69cfc529bd3759c855dd51e0efb0f",
+      "supabase/migrations/20260921124640_efd524bf-82e8-49f0-ac23-0eac31e959b1.sql": "8aaa07d6b1e3168de62ffa58e2887c1f",
+      "supabase/migrations/20260921135753_400c64a9-3049-42ee-8283-7ef2f8fa37d6.sql": "4b415b0a011ad9c9eab50688b8dc2e31",
+      "supabase/migrations/20260921135955_ac0bd42a-a915-4b22-b7c9-90abbf0452a9.sql": "ba5eb9034e77c5dbe26ed1848555f404",
+      "supabase/migrations/20260922071418_33a9ba9b-a855-4ea1-afc8-8c9b0c75041c.sql": "fa45110e095fdde25053946f95901012",
+      "supabase/migrations/20260922095206_5302549a-5680-4a1b-ac4b-0af913a17e28.sql": "8684b1349d67ff8d0135f0a9970ec424",
+      "supabase/migrations/20260928175509_325f1d45-da81-4724-84f6-a6e6ec07ea43.sql": "b78df750255e89ca22afba3b4bd96188",
+      "supabase/migrations/20260929162628_029421ca-9c15-4057-a2f1-4151c006bf11.sql": "c352bd96567e410942fb3d4dd1de8c37",
+      "supabase/migrations/20260929220305_c2e7cfd9-d385-48ca-b9d0-05f1b282988b.sql": "62b327d0933faf4080797be226079a23",
+      "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
+      "vite.config.ts": "ea9c1f71a7df8464834171e590f5fbc9",
+      "wrangler.jsonc": "7ebf8621e6c6742973656e13b1f95abe"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--background",
+        "raw": "oklch(1 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--foreground",
+        "raw": "oklch(0.15 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card",
+        "raw": "oklch(1 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--card-foreground",
+        "raw": "oklch(0.15 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover",
+        "raw": "oklch(1 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--popover-foreground",
+        "raw": "oklch(0.15 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary",
+        "raw": "oklch(0.18 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary-foreground",
+        "raw": "oklch(0.99 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary",
+        "raw": "oklch(0.96 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--secondary-foreground",
+        "raw": "oklch(0.2 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted",
+        "raw": "oklch(0.96 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--muted-foreground",
+        "raw": "oklch(0.5 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent",
+        "raw": "oklch(0.93 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--accent-foreground",
+        "raw": "oklch(0.2 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive",
+        "raw": "oklch(0.58 0.22 25)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--destructive-foreground",
+        "raw": "oklch(0.99 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--border",
+        "raw": "oklch(0.9 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--input",
+        "raw": "oklch(0.9 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--ring",
+        "raw": "oklch(0.18 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--primary-soft",
+        "raw": "oklch(0.95 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--verified",
+        "raw": "oklch(0.2 0 0)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-green",
+        "raw": "#58cc02",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-green-dark",
+        "raw": "#369000",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-green-tint",
+        "raw": "#203019",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-blue",
+        "raw": "#1cb0f6",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-blue-dark",
+        "raw": "#137ba9",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-gold",
+        "raw": "#ffc800",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-gold-dark",
+        "raw": "#a87900",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-grid",
+        "raw": "#1b1e24",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-road",
+        "raw": "#2a2e36",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-road-dark",
+        "raw": "#16181d",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-overlay",
+        "raw": "#07090ce8",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-error",
+        "raw": "#ff827c",
+        "source": "src/styles.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--font-sans",
+        "raw": "\"Libre Franklin\", ui-sans-serif, system-ui, -apple-system, sans-serif",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--game-road-line",
+        "raw": "#454b56",
+        "source": "src/styles.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--radius-sm",
+        "raw": "calc(var(--radius) - 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-md",
+        "raw": "calc(var(--radius) - 2px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-xl",
+        "raw": "calc(var(--radius) + 4px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius-2xl",
+        "raw": "calc(var(--radius) + 8px)",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--radius",
+        "raw": "0.75rem",
+        "source": "src/styles.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--game-shadow",
+        "raw": "#00000055",
+        "source": "src/styles.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--animate-marquee",
+        "raw": "marquee 40s linear infinite",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--animate-marquee-reverse",
+        "raw": "marquee-reverse 50s linear infinite",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--animate-rise",
+        "raw": "rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--animate-fade-up",
+        "raw": "fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--animate-fade-in-soft",
+        "raw": "fade-in-soft 0.6s ease-out both",
+        "source": "src/styles.css"
+      },
+      {
+        "name": "--animate-pulse-dot",
+        "raw": "pulse-dot 2.6s ease-in-out infinite",
+        "source": "src/styles.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "BeamsProvider",
+      "file": "src/components/BeamsBackground",
+      "import_path": ""
+    },
+    {
+      "name": "BeamsBackground",
+      "file": "src/components/BeamsBackground",
+      "import_path": "",
+      "is_default": true
+    },
+    {
+      "name": "AITextLoading",
+      "file": "src/components/ui/ai-text-loading",
+      "import_path": "",
+      "is_default": true,
+      "props": [
+        {
+          "name": "texts",
+          "type": "any"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "text-base font-medium text-muted-foreground"
+        },
+        {
+          "name": "interval",
+          "type": "number",
+          "default": "1500"
+        }
+      ]
+    },
+    {
+      "name": "VoiceChat",
+      "file": "src/components/ui/ia-siri-chat",
+      "import_path": "",
+      "props": [
+        {
+          "name": "onStart",
+          "type": "function"
+        },
+        {
+          "name": "onStop",
+          "type": "function"
+        },
+        {
+          "name": "onVolumeChange",
+          "type": "function"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "absolute inset-0 overflow-hidden"
+        },
+        {
+          "name": "demoMode",
+          "type": "boolean",
+          "default": "true"
+        }
+      ]
+    },
+    {
+      "name": "VoiceChatDemo",
+      "file": "src/components/ui/ia-siri-chat",
+      "import_path": "",
+      "is_default": true
+    },
+    {
+      "name": "Loader",
+      "file": "src/components/ui/loader",
+      "import_path": "",
+      "is_default": true,
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "Configuring your account..."
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "default": "Please wait while we prepare everything for you"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": ["sm", "md", "lg"],
+          "default": "md"
+        }
+      ]
+    },
+    {
+      "name": "ParticleButton",
+      "file": "src/components/ui/particle-button",
+      "import_path": "",
+      "is_default": true,
+      "props": [
+        {
+          "name": "onSuccess",
+          "type": "function"
+        },
+        {
+          "name": "successDuration",
+          "type": "number",
+          "default": "1000"
+        }
+      ]
+    },
+    {
+      "name": "TypewriterTitle",
+      "file": "src/components/ui/typewriter-title",
+      "import_path": "",
+      "is_default": true,
+      "props": [
+        {
+          "name": "sequences",
+          "type": "any"
+        },
+        {
+          "name": "typingSpeed",
+          "type": "number",
+          "default": "50"
+        },
+        {
+          "name": "startDelay",
+          "type": "number",
+          "default": "200"
+        },
+        {
+          "name": "autoLoop",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "loopDelay",
+          "type": "number",
+          "default": "1000"
+        },
+        {
+          "name": "deleteSpeed",
+          "type": "number",
+          "default": "30"
+        },
+        {
+          "name": "pauseBeforeDelete",
+          "type": "number",
+          "default": "1000"
+        },
+        {
+          "name": "naturalVariance",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "default": "ml-1 inline-block h-[1em] w-[2px] translate-y-[0.12em] bg-foreground align-middle"
+        },
+        {
+          "name": "onComplete",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "name": "RotatingEarth",
+      "file": "src/components/ui/wireframe-dotted-globe",
+      "import_path": "",
+      "is_default": true,
+      "props": [
+        {
+          "name": "width",
+          "type": "number",
+          "default": "400"
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "default": "400"
+        },
+        {
+          "name": "className",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/antler.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/empty-startups-emoji.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/finland-map.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/forward.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/forward.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/grey-sad-emoji.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/ignite.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/journey-companion.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/launchx.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/logo-antler.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/logo-boost.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/logo-forward-new.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/logo-forward.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/logo-ignite.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/logo-oulues.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/logo-slush.png",
+      "kind": "logo",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/lutes-growth.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Avesta_Omar.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Cameron_Murphy.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Claes_Mikko_Nilsen.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Ilkka_Paananen.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Jussi_Kallasvuo.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Lauri_Kokkila.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Marianne_Vikkula.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Marten_Mickos.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Matti_Ronkko.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Monika_Liikamaa.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Niko_Downie.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Niko_Eiden.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Noora_Saksa.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Olli_Kangas.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Otto_Hilska.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Peter_Sarlin.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Son_Chu_Hoang.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Ville_Kyrki.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Walid_El_Cheikh.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/mentors/Youssef_Zad.jpg.asset.json",
+      "kind": "image",
+      "format": "jpg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/moksh.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/oulues.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/pitch/antler.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/pitch/forward.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/pitch/ruslan.jpeg",
+      "kind": "image",
+      "format": "jpeg"
+    },
+    {
+      "file": "src/assets/pitch/slush.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/pitch/video-thumb.jpeg",
+      "kind": "image",
+      "format": "jpeg"
+    },
+    {
+      "file": "src/assets/ruslan.jpeg",
+      "kind": "image",
+      "format": "jpeg"
+    },
+    {
+      "file": "src/assets/slush.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/slush.webp.asset.json",
+      "kind": "image",
+      "format": "webp",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/steve-jobs.png",
+      "kind": "image",
+      "format": "png"
+    },
+    {
+      "file": "src/assets/stockholm.jpeg.asset.json",
+      "kind": "image",
+      "format": "jpeg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/team-combined.jpeg.asset.json",
+      "kind": "image",
+      "format": "jpeg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/team-moksh.jpeg",
+      "kind": "image",
+      "format": "jpeg"
+    },
+    {
+      "file": "src/assets/team-moksh.jpeg.asset.json",
+      "kind": "image",
+      "format": "jpeg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/team-ruslan.jpeg",
+      "kind": "image",
+      "format": "jpeg"
+    },
+    {
+      "file": "src/assets/team-ruslan.jpeg.asset.json",
+      "kind": "image",
+      "format": "jpeg",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/tres.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/ventura-orb-logo.png.asset.json",
+      "kind": "logo",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/ventura-v-logo.png.asset.json",
+      "kind": "logo",
+      "format": "png",
+      "pointer": true
+    },
+    {
+      "file": "src/assets/video-thumb.jpeg",
+      "kind": "image",
+      "format": "jpeg"
+    },
+    {
+      "file": "src/assets/wednesday.png.asset.json",
+      "kind": "image",
+      "format": "png",
+      "pointer": true
+    }
+  ]
+}

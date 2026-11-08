@@ -1,0 +1,1083 @@
+{
+ "sourceName": "Lindstrom_SinceAI_Customer_Value_Synthetic_Data_Pack.xlsx",
+ "generatedAt": "2026-11-07T09:08:14.276Z",
+ "tables": [
+  {
+   "table": "customers",
+   "label": "Customers",
+   "required": true,
+   "sourceSheet": "Customers",
+   "rowsRead": 3,
+   "rowsKept": 3,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "customer_id",
+     "sourceHeader": "customer_id",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_name",
+     "sourceHeader": "customer_name",
+     "viaAlias": false
+    },
+    {
+     "field": "industry",
+     "sourceHeader": "industry",
+     "viaAlias": false
+    },
+    {
+     "field": "segment",
+     "sourceHeader": "segment",
+     "viaAlias": false
+    },
+    {
+     "field": "hq_country",
+     "sourceHeader": "hq_country",
+     "viaAlias": false
+    },
+    {
+     "field": "priority_topics",
+     "sourceHeader": "priority_topics",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "laundries",
+   "label": "Laundries",
+   "required": true,
+   "sourceSheet": "Laundries",
+   "rowsRead": 4,
+   "rowsKept": 4,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_name",
+     "sourceHeader": "laundry_name",
+     "viaAlias": false
+    },
+    {
+     "field": "country",
+     "sourceHeader": "country",
+     "viaAlias": false
+    },
+    {
+     "field": "country_code",
+     "sourceHeader": "country_code",
+     "viaAlias": false
+    },
+    {
+     "field": "note",
+     "sourceHeader": "note",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "products",
+   "label": "Products",
+   "required": true,
+   "sourceSheet": "Products",
+   "rowsRead": 6,
+   "rowsKept": 6,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "product_id",
+     "sourceHeader": "product_id",
+     "viaAlias": false
+    },
+    {
+     "field": "product_name",
+     "sourceHeader": "product_name",
+     "viaAlias": false
+    },
+    {
+     "field": "product_group",
+     "sourceHeader": "product_group",
+     "viaAlias": false
+    },
+    {
+     "field": "avg_weight_kg",
+     "sourceHeader": "avg_weight_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "synthetic_product_footprint_kgco2e",
+     "sourceHeader": "synthetic_product_footprint_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "synthetic_purchase_cost_eur",
+     "sourceHeader": "synthetic_purchase_cost_eur",
+     "viaAlias": false
+    },
+    {
+     "field": "material_note",
+     "sourceHeader": "material_note",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "sites",
+   "label": "Sites",
+   "required": true,
+   "sourceSheet": "Sites",
+   "rowsRead": 34,
+   "rowsKept": 34,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "site_id",
+     "sourceHeader": "site_id",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_id",
+     "sourceHeader": "customer_id",
+     "viaAlias": false
+    },
+    {
+     "field": "site_name",
+     "sourceHeader": "site_name",
+     "viaAlias": false
+    },
+    {
+     "field": "country",
+     "sourceHeader": "country",
+     "viaAlias": false
+    },
+    {
+     "field": "city",
+     "sourceHeader": "city",
+     "viaAlias": false
+    },
+    {
+     "field": "site_type",
+     "sourceHeader": "site_type",
+     "viaAlias": false
+    },
+    {
+     "field": "primary_laundry_id",
+     "sourceHeader": "primary_laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "industryPriorities",
+   "label": "Industry priorities",
+   "required": false,
+   "sourceSheet": "Industry_Priorities",
+   "rowsRead": 9,
+   "rowsKept": 9,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "industry",
+     "sourceHeader": "industry",
+     "viaAlias": false
+    },
+    {
+     "field": "priority_rank",
+     "sourceHeader": "priority_rank",
+     "viaAlias": false
+    },
+    {
+     "field": "priority_theme",
+     "sourceHeader": "priority_theme",
+     "viaAlias": false
+    },
+    {
+     "field": "dashboard_emphasis",
+     "sourceHeader": "dashboard_emphasis",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "activity",
+   "label": "Service activity",
+   "required": true,
+   "sourceSheet": "Service_Activity",
+   "rowsRead": 1248,
+   "rowsKept": 1248,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "month",
+     "sourceHeader": "month",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_id",
+     "sourceHeader": "customer_id",
+     "viaAlias": false
+    },
+    {
+     "field": "site_id",
+     "sourceHeader": "site_id",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "product_id",
+     "sourceHeader": "product_id",
+     "viaAlias": false
+    },
+    {
+     "field": "active_wearers",
+     "sourceHeader": "active_wearers",
+     "viaAlias": false
+    },
+    {
+     "field": "allocated_pieces",
+     "sourceHeader": "allocated_pieces",
+     "viaAlias": false
+    },
+    {
+     "field": "active_assets_scanned",
+     "sourceHeader": "active_assets_scanned",
+     "viaAlias": false
+    },
+    {
+     "field": "washed_pieces",
+     "sourceHeader": "washed_pieces",
+     "viaAlias": false
+    },
+    {
+     "field": "packed_pieces",
+     "sourceHeader": "packed_pieces",
+     "viaAlias": false
+    },
+    {
+     "field": "washing_pct",
+     "sourceHeader": "washing_pct",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_washed_kg",
+     "sourceHeader": "customer_washed_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "service_requests",
+     "sourceHeader": "service_requests",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "repairs",
+   "label": "Repairs",
+   "required": true,
+   "sourceSheet": "Repairs",
+   "rowsRead": 3635,
+   "rowsKept": 3635,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "month",
+     "sourceHeader": "month",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_id",
+     "sourceHeader": "customer_id",
+     "viaAlias": false
+    },
+    {
+     "field": "site_id",
+     "sourceHeader": "site_id",
+     "viaAlias": false
+    },
+    {
+     "field": "product_id",
+     "sourceHeader": "product_id",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "repair_type",
+     "sourceHeader": "repair_type",
+     "viaAlias": false
+    },
+    {
+     "field": "repair_count",
+     "sourceHeader": "repair_count",
+     "viaAlias": false
+    },
+    {
+     "field": "repair_quotient_pct",
+     "sourceHeader": "repair_quotient_pct",
+     "viaAlias": false
+    },
+    {
+     "field": "estimated_replacements_postponed",
+     "sourceHeader": "estimated_replacements_postponed",
+     "viaAlias": false
+    },
+    {
+     "field": "product_footprint_kgco2e",
+     "sourceHeader": "product_footprint_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "estimated_avoided_product_kgco2e",
+     "sourceHeader": "estimated_avoided_product_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "cycles",
+   "label": "Service cycles (RFID)",
+   "required": false,
+   "sourceSheet": "Service_Cycles",
+   "rowsRead": 16415,
+   "rowsKept": 16415,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "asset_id",
+     "sourceHeader": "asset_id",
+     "viaAlias": false
+    },
+    {
+     "field": "cycle_number",
+     "sourceHeader": "cycle_number",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_id",
+     "sourceHeader": "customer_id",
+     "viaAlias": false
+    },
+    {
+     "field": "site_id",
+     "sourceHeader": "site_id",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "product_id",
+     "sourceHeader": "product_id",
+     "viaAlias": false
+    },
+    {
+     "field": "pickup_timestamp",
+     "sourceHeader": "pickup_timestamp",
+     "viaAlias": false
+    },
+    {
+     "field": "in_laundry_timestamp",
+     "sourceHeader": "in_laundry_timestamp",
+     "viaAlias": false
+    },
+    {
+     "field": "out_laundry_timestamp",
+     "sourceHeader": "out_laundry_timestamp",
+     "viaAlias": false
+    },
+    {
+     "field": "delivered_timestamp",
+     "sourceHeader": "delivered_timestamp",
+     "viaAlias": false
+    },
+    {
+     "field": "cycle_hours",
+     "sourceHeader": "cycle_hours",
+     "viaAlias": false
+    },
+    {
+     "field": "performance_flag",
+     "sourceHeader": "performance_flag",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "laundryMonths",
+   "label": "Laundry resources",
+   "required": true,
+   "sourceSheet": "Laundry_Resources",
+   "rowsRead": 48,
+   "rowsKept": 48,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "month",
+     "sourceHeader": "month",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_name",
+     "sourceHeader": "laundry_name",
+     "viaAlias": false
+    },
+    {
+     "field": "country",
+     "sourceHeader": "country",
+     "viaAlias": false
+    },
+    {
+     "field": "washed_kg",
+     "sourceHeader": "washed_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "energy_kwh_per_kg",
+     "sourceHeader": "energy_kwh_per_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "fresh_water_l_per_kg",
+     "sourceHeader": "fresh_water_l_per_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "process_energy_kwh",
+     "sourceHeader": "process_energy_kwh",
+     "viaAlias": false
+    },
+    {
+     "field": "fresh_water_l",
+     "sourceHeader": "fresh_water_l",
+     "viaAlias": false
+    },
+    {
+     "field": "process_emissions_kgco2e",
+     "sourceHeader": "process_emissions_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "delivery_emissions_kgco2e",
+     "sourceHeader": "delivery_emissions_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "waste",
+   "label": "Waste & circularity",
+   "required": true,
+   "sourceSheet": "Waste_Circularity",
+   "rowsRead": 48,
+   "rowsKept": 48,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "month",
+     "sourceHeader": "month",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "recycling_kg",
+     "sourceHeader": "recycling_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "reuse_kg",
+     "sourceHeader": "reuse_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "energy_recovery_kg",
+     "sourceHeader": "energy_recovery_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "incineration_kg",
+     "sourceHeader": "incineration_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "textile_waste_total_kg",
+     "sourceHeader": "textile_waste_total_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "waste_kg_per_washed_kg",
+     "sourceHeader": "waste_kg_per_washed_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "baselines",
+   "label": "Comparison baselines",
+   "required": true,
+   "sourceSheet": "Baselines",
+   "rowsRead": 3,
+   "rowsKept": 3,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "baseline_id",
+     "sourceHeader": "baseline_id",
+     "viaAlias": false
+    },
+    {
+     "field": "baseline_name",
+     "sourceHeader": "baseline_name",
+     "viaAlias": false
+    },
+    {
+     "field": "selection_status",
+     "sourceHeader": "selection_status",
+     "viaAlias": false
+    },
+    {
+     "field": "water_l_per_kg",
+     "sourceHeader": "water_l_per_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "energy_kwh_per_kg",
+     "sourceHeader": "energy_kwh_per_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "process_kgco2e_per_kg",
+     "sourceHeader": "process_kgco2e_per_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "delivery_kgco2e_per_kg",
+     "sourceHeader": "delivery_kgco2e_per_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "mixed_waste_share",
+     "sourceHeader": "mixed_waste_share",
+     "viaAlias": false
+    },
+    {
+     "field": "assumption_note",
+     "sourceHeader": "assumption_note",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "impacts",
+   "label": "Customer impacts",
+   "required": true,
+   "sourceSheet": "Customer_Impacts",
+   "rowsRead": 1248,
+   "rowsKept": 1248,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "month",
+     "sourceHeader": "month",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_id",
+     "sourceHeader": "customer_id",
+     "viaAlias": false
+    },
+    {
+     "field": "site_id",
+     "sourceHeader": "site_id",
+     "viaAlias": false
+    },
+    {
+     "field": "laundry_id",
+     "sourceHeader": "laundry_id",
+     "viaAlias": false
+    },
+    {
+     "field": "product_id",
+     "sourceHeader": "product_id",
+     "viaAlias": false
+    },
+    {
+     "field": "customer_washed_kg",
+     "sourceHeader": "customer_washed_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "share_of_laundry_washed_kg",
+     "sourceHeader": "share_of_laundry_washed_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "allocated_water_l",
+     "sourceHeader": "allocated_water_l",
+     "viaAlias": false
+    },
+    {
+     "field": "allocated_energy_kwh",
+     "sourceHeader": "allocated_energy_kwh",
+     "viaAlias": false
+    },
+    {
+     "field": "allocated_process_kgco2e",
+     "sourceHeader": "allocated_process_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "allocated_delivery_kgco2e",
+     "sourceHeader": "allocated_delivery_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "allocated_textile_waste_kg",
+     "sourceHeader": "allocated_textile_waste_kg",
+     "viaAlias": false
+    },
+    {
+     "field": "water_saving_vs_local_l",
+     "sourceHeader": "water_saving_vs_local_l",
+     "viaAlias": false
+    },
+    {
+     "field": "energy_saving_vs_local_kwh",
+     "sourceHeader": "energy_saving_vs_local_kwh",
+     "viaAlias": false
+    },
+    {
+     "field": "emissions_saving_vs_local_kgco2e",
+     "sourceHeader": "emissions_saving_vs_local_kgco2e",
+     "viaAlias": false
+    },
+    {
+     "field": "data_status",
+     "sourceHeader": "data_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "assumptions",
+   "label": "Assumption registry",
+   "required": false,
+   "sourceSheet": "Assumptions",
+   "rowsRead": 8,
+   "rowsKept": 8,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "assumption_id",
+     "sourceHeader": "assumption_id",
+     "viaAlias": false
+    },
+    {
+     "field": "assumption",
+     "sourceHeader": "assumption",
+     "viaAlias": false
+    },
+    {
+     "field": "value_or_rule",
+     "sourceHeader": "value_or_rule",
+     "viaAlias": false
+    },
+    {
+     "field": "rationale",
+     "sourceHeader": "rationale",
+     "viaAlias": false
+    },
+    {
+     "field": "category",
+     "sourceHeader": "category",
+     "viaAlias": false
+    },
+    {
+     "field": "confidence",
+     "sourceHeader": "confidence",
+     "viaAlias": false
+    },
+    {
+     "field": "treatment",
+     "sourceHeader": "treatment",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "dataQuality",
+   "label": "Data quality flags",
+   "required": false,
+   "sourceSheet": "Data_Quality",
+   "rowsRead": 7,
+   "rowsKept": 7,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "dataset",
+     "sourceHeader": "dataset",
+     "viaAlias": false
+    },
+    {
+     "field": "fields",
+     "sourceHeader": "fields",
+     "viaAlias": false
+    },
+    {
+     "field": "status",
+     "sourceHeader": "status",
+     "viaAlias": false
+    },
+    {
+     "field": "confidence",
+     "sourceHeader": "confidence",
+     "viaAlias": false
+    },
+    {
+     "field": "note",
+     "sourceHeader": "note",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "suggestedPrompts",
+   "label": "Suggested prompts",
+   "required": false,
+   "sourceSheet": "Suggested_Prompts",
+   "rowsRead": 6,
+   "rowsKept": 6,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "user_type",
+     "sourceHeader": "user_type",
+     "viaAlias": false
+    },
+    {
+     "field": "prompt",
+     "sourceHeader": "prompt",
+     "viaAlias": false
+    },
+    {
+     "field": "expected_output",
+     "sourceHeader": "expected_output",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "sampleOutput",
+   "label": "Worked reference output",
+   "required": false,
+   "sourceSheet": "Sample_Output",
+   "rowsRead": 13,
+   "rowsKept": 13,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "metric",
+     "sourceHeader": "metric",
+     "viaAlias": false
+    },
+    {
+     "field": "value",
+     "sourceHeader": "value",
+     "viaAlias": false
+    },
+    {
+     "field": "unit",
+     "sourceHeader": "unit",
+     "viaAlias": false
+    },
+    {
+     "field": "status/interpretation",
+     "sourceHeader": "status/interpretation",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "dictionary",
+   "label": "Data dictionary",
+   "required": false,
+   "sourceSheet": "Data_Dictionary",
+   "rowsRead": 139,
+   "rowsKept": 139,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "sheet",
+     "sourceHeader": "sheet",
+     "viaAlias": false
+    },
+    {
+     "field": "field",
+     "sourceHeader": "field",
+     "viaAlias": false
+    },
+    {
+     "field": "definition",
+     "sourceHeader": "definition",
+     "viaAlias": false
+    },
+    {
+     "field": "join_role",
+     "sourceHeader": "join_role",
+     "viaAlias": false
+    },
+    {
+     "field": "default_status",
+     "sourceHeader": "default_status",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  },
+  {
+   "table": "quickStart",
+   "label": "Quick start",
+   "required": false,
+   "sourceSheet": "Quick_Start",
+   "rowsRead": 6,
+   "rowsKept": 6,
+   "rowsDropped": 0,
+   "mappedColumns": [
+    {
+     "field": "step",
+     "sourceHeader": "step",
+     "viaAlias": false
+    },
+    {
+     "field": "builder_action",
+     "sourceHeader": "builder_action",
+     "viaAlias": false
+    },
+    {
+     "field": "key_sheets",
+     "sourceHeader": "key_sheets",
+     "viaAlias": false
+    },
+    {
+     "field": "output",
+     "sourceHeader": "output",
+     "viaAlias": false
+    }
+   ],
+   "missingColumns": [],
+   "unusedHeaders": []
+  }
+ ],
+ "issues": [],
+ "reconciliation": [
+  {
+   "id": "ref-wearers",
+   "label": "Reference: Active wearers (last month, summed product rows)",
+   "status": "pass",
+   "expected": "28,367",
+   "observed": "28,367",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-allocated",
+   "label": "Reference: Garments allocated (last month)",
+   "status": "pass",
+   "expected": "31,743",
+   "observed": "31,743",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-kg",
+   "label": "Reference: Washed kg (year)",
+   "status": "pass",
+   "expected": "502,074.7",
+   "observed": "502,074.7",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-repairs",
+   "label": "Reference: Repairs (year)",
+   "status": "pass",
+   "expected": "15,233",
+   "observed": "15,233",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-water",
+   "label": "Reference: Water saving vs local laundry (L)",
+   "status": "pass",
+   "expected": "1,406,482.6",
+   "observed": "1,406,482.6",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-co2",
+   "label": "Reference: Emission saving vs local laundry (kgCO2e)",
+   "status": "pass",
+   "expected": "255,073.1",
+   "observed": "255,073.1",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-waste",
+   "label": "Reference: Textile waste attributed (kg)",
+   "status": "pass",
+   "expected": "16,797.1",
+   "observed": "16,797.1",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "ref-requests",
+   "label": "Reference: Service requests (year)",
+   "status": "pass",
+   "expected": "515",
+   "observed": "515",
+   "note": "NorthStar Foods Group: engine total vs Sample_Output worked reference"
+  },
+  {
+   "id": "alloc-share",
+   "label": "Customer washed kg ≤ laundry washed kg",
+   "status": "warn",
+   "expected": "Share of laundry ≤ 100% in every laundry-month",
+   "observed": "12 laundry-months above 100% (Nordic Malmö WWS: up to 1,258%)",
+   "note": "Laundry totals are inconsistent with customer volumes. The engine allocates with per-kg intensities, which stay valid, but absolute laundry totals for these units should not be quoted."
+  },
+  {
+   "id": "recalc-water",
+   "label": "Water saving recomputed from Outsourced local laundry factor",
+   "status": "pass",
+   "expected": "2,148,546 L (supplied column)",
+   "observed": "2,148,547 L (kg × 9.5 L/kg − allocated water)",
+   "note": "Largest single-row difference 0.1 L (rounding). Confirms the saving logic is traceable."
+  },
+  {
+   "id": "recalc-waste",
+   "label": "Textile waste allocated by share of washed kg (A003)",
+   "status": "pass",
+   "expected": "27,581 kg (supplied)",
+   "observed": "27,581 kg (recomputed)",
+   "note": "Waste is laundry-level; customer figures are allocated estimates."
+  },
+  {
+   "id": "repair-rule",
+   "label": "Repair rule A002 applied in source (1 repair → 1 postponed replacement)",
+   "status": "pass",
+   "expected": "postponed = repair_count",
+   "observed": "All 3,635 rows",
+   "note": "The dashboard applies its own sensitivity factor (low/base/high) on top of the raw count."
+  },
+  {
+   "id": "coverage",
+   "label": "Monthly coverage per site and product",
+   "status": "pass",
+   "expected": "12 months for each of 104 site-product combinations",
+   "observed": "Complete",
+   "note": "No missing months."
+  },
+  {
+   "id": "rfid-coherence",
+   "label": "RFID cycle sample vs washing volume",
+   "status": "warn",
+   "expected": "≈ 23.5 washes per allocated garment per year (Service_Activity)",
+   "observed": "5.3 tracked cycles per RFID asset per year (3,076 assets)",
+   "note": "The cycle file is a sample: use it for turnaround and timeliness, not for wash frequency."
+  },
+  {
+   "id": "idle-laundries",
+   "label": "Laundries in master data without customer volume",
+   "status": "pass",
+   "expected": "Informational",
+   "observed": "Aurora Turku WWS",
+   "note": "Present in resource data but not serving the fictional customers - excluded from allocation."
+  }
+ ]
+}

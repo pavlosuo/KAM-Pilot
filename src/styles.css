@@ -1,0 +1,135 @@
+@import "tailwindcss" source(none);
+@import "./design-system/ventura-6bef42/styles.css";
+@source "../src";
+
+/*
+ * Lindström visual system (lindstromgroup.com style guide + site stylesheet):
+ * light pages, dark-blue headings, Libre Franklin, 5px corners, soft card
+ * shadows and pill buttons. Deliberate override of the attached library theme,
+ * requested by the challenge provider (7 Nov).
+ */
+:root {
+  --lind-navy: #003f72;
+  --lind-blue: #0074cc;
+  --lind-red: #e52330;
+  --lind-green: #578200;
+  --lind-pink: #ca005d;
+  --lind-purple: #7c109a;
+  --lind-turquoise: #006f86;
+  --lind-orange: #bd5a00;
+  --lind-grey-100: #222222;
+  --lind-grey-75: #555555;
+  --lind-grey-50: #999999;
+  --lind-grey-25: #dddddd;
+  --lind-grey-10: #e5e5e5;
+  --lind-light-grey: #f2f2f2;
+
+  --radius: 0.3125rem;
+  --background: var(--lind-light-grey);
+  --foreground: var(--lind-grey-100);
+  --card: #ffffff;
+  --card-foreground: var(--lind-grey-100);
+  --popover: #ffffff;
+  --popover-foreground: var(--lind-grey-100);
+  --primary: var(--company-primary, var(--lind-navy));
+  --primary-foreground: #ffffff;
+  --secondary: color-mix(in oklab, var(--lind-navy) 7%, white);
+  --secondary-foreground: var(--lind-navy);
+  --muted: var(--lind-light-grey);
+  --muted-foreground: var(--lind-grey-75);
+  --accent: color-mix(in oklab, var(--lind-navy) 6%, white);
+  --accent-foreground: var(--lind-navy);
+  --destructive: var(--lind-red);
+  --destructive-foreground: #ffffff;
+  --border: var(--lind-grey-25);
+  --input: var(--lind-grey-25);
+  --ring: var(--lind-blue);
+  --primary-soft: color-mix(in oklab, var(--lind-navy) 8%, white);
+  --verified: var(--lind-green);
+  --shadow-lind: 0 1px 2px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-lind-navy: var(--lind-navy);
+  --color-lind-blue: var(--lind-blue);
+  --color-lind-red: var(--lind-red);
+  --color-lind-green: var(--lind-green);
+  --color-lind-pink: var(--lind-pink);
+  --color-lind-purple: var(--lind-purple);
+  --color-lind-turquoise: var(--lind-turquoise);
+  --color-lind-orange: var(--lind-orange);
+  --color-lind-ink: var(--lind-grey-100);
+  --color-lind-grey: var(--lind-grey-75);
+  --color-lind-silver: var(--lind-grey-50);
+  --color-lind-line: var(--lind-grey-25);
+  --color-lind-mist: var(--lind-light-grey);
+  --color-brand-secondary: var(--company-secondary, var(--lind-red));
+  --shadow-lind: var(--shadow-lind);
+  --font-sans: "Libre Franklin", Arial, ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Slightly larger base size: the review is read by people of every age. */
+html {
+  font-size: 106.25%;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-guide-active] {
+  outline-style: solid;
+  outline-color: var(--lind-blue);
+  outline-width: calc(var(--spacing) * 0.75);
+  outline-offset: var(--spacing);
+  border-radius: var(--radius);
+}
+
+/* A section reached from a Recap link glows briefly so the eye lands on it. */
+[data-deep-link] {
+  scroll-margin-top: calc(var(--spacing) * 24);
+}
+[data-deep-link="on"] {
+  animation: deep-link-glow 2.6s ease-out 0.4s backwards;
+  outline-style: solid;
+  outline-width: calc(var(--spacing) * 0.75);
+  outline-color: transparent;
+  outline-offset: var(--spacing);
+}
+@keyframes deep-link-glow {
+  0% {
+    outline-color: color-mix(in srgb, var(--lind-blue) 0%, transparent);
+    outline-offset: 0;
+  }
+  15% {
+    outline-color: color-mix(in srgb, var(--lind-blue) 70%, transparent);
+    outline-offset: var(--spacing);
+  }
+  70% {
+    outline-color: color-mix(in srgb, var(--lind-blue) 45%, transparent);
+  }
+  100% {
+    outline-color: color-mix(in srgb, var(--lind-blue) 0%, transparent);
+    outline-offset: calc(var(--spacing) * 2);
+  }
+}
+
+@utility eyebrow {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
